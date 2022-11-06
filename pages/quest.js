@@ -4,16 +4,18 @@ import Link from "next/link";
 import Grid from "@mui/material/Unstable_Grid2";
 import Header from "../components/header";
 import AnimatedPage from "../components/AnimatedPage";
+import LinearProgress from "@mui/material/LinearProgress";
+
 export default function Quest() {
-	return (
-		<AnimatedPage>
-			<Header />
-			<div className="container">
-				<Head>
-					<title>Prime Nine - QUEST</title>
-					<meta name="description" content="Prime Nine" />
-					<link rel="icon" href="/favicon.ico" />
-				</Head>
+  return (
+    <AnimatedPage>
+      <Header />
+      <div className="container">
+        <Head>
+          <title>Prime Nine - QUEST</title>
+          <meta name="description" content="Prime Nine" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
 				<Grid
 					container
@@ -41,7 +43,7 @@ export default function Quest() {
 							<h3>Earn them by creating topics in the community forums.</h3>
 							<img width="20px" src="image/badge.svg" />
 							<h4>320/500</h4>
-							<span className="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
+							<span class="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
 						</div>
 						<div className="store-item">
 							<img className="img" src="image/items/52.png" />
@@ -49,7 +51,7 @@ export default function Quest() {
 							<h3>Earn them by creating topics in the community forums.</h3>
 							<img width="20px" src="image/badge.svg" />
 							<h4>320/500</h4>
-							<span className="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
+							<span class="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
 						</div>
 						<div className="store-item">
 							<img className="img" src="image/items/76.png" />
@@ -57,7 +59,7 @@ export default function Quest() {
 							<h3>Earn them by creating topics in the community forums.</h3>
 							<img width="20px" src="image/badge.svg" />
 							<h4>320/500</h4>
-							<span className="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
+							<span class="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
 						</div>
 						<div className="store-item">
 							<img className="img" src="image/items/84.png" />
@@ -65,7 +67,7 @@ export default function Quest() {
 							<h3>Earn them by creating topics in the community forums.</h3>
 							<img width="20px" src="image/badge.svg" />
 							<h4>320/500</h4>
-							<span className="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
+							<span class="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
 						</div>
 						<div className="store-item">
 							<img className="img" src="image/items/35.png" />
@@ -73,7 +75,7 @@ export default function Quest() {
 							<h3>Earn them by creating topics in the community forums.</h3>
 							<img width="20px" src="image/badge.svg" />
 							<h4>320/500</h4>
-							<span className="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
+							<span class="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
 						</div>
 						<div className="store-item">
 							<img className="img" src="image/items/45.png" />
@@ -81,7 +83,7 @@ export default function Quest() {
 							<h3>Earn them by creating topics in the community forums.</h3>
 							<img width="20px" src="image/badge.svg" />
 							<h4>320/500</h4>
-							<span className="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
+							<span class="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
 						</div>
 						<div className="store-item">
 							<img className="img" src="image/items/23.png" />
@@ -89,7 +91,7 @@ export default function Quest() {
 							<h3>Earn them by creating topics in the community forums.</h3>
 							<img width="20px" src="image/badge.svg" />
 							<h4>320/500</h4>
-							<span className="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
+							<span class="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
 						</div>
 						<div className="store-item">
 							<img className="img" src="image/items/47.png" />
@@ -97,7 +99,7 @@ export default function Quest() {
 							<h3>Earn them by creating topics in the community forums.</h3>
 							<img width="20px" src="image/badge.svg" />
 							<h4>320/500</h4>
-							<span className="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
+							<span class="badge css-106c1u2-MuiBadge-badge">+ 10 xp</span>
 						</div>
 					</Grid>
 				</Grid>
