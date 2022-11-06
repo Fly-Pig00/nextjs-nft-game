@@ -39,7 +39,7 @@ export default function Store() {
             </div>
           </Grid>
           <Grid container className="store-items">
-			<Grid item xs={6} sm={3} md={2}>
+			<Grid item sm={4} md={3} lg={2}>
             <div className="store-item">
               <img className="img" src="image/items/55.png" />
               <h2>sickle</h2>
@@ -50,7 +50,7 @@ export default function Store() {
               </div>
             </div>
 			</Grid>
-			<Grid item xs={6} sm={3} md={2}>
+			<Grid item sm={4} md={3} lg={2}>
             <div className="store-item">
               <img className="img" src="image/items/64.png" />
               <h2>Armour</h2>
@@ -61,7 +61,7 @@ export default function Store() {
               </div>
             </div>
 			</Grid>
-			<Grid item xs={6} sm={3} md={2}>
+			<Grid item sm={4} md={3} lg={2}>
             <div className="store-item">
               <img className="img" src="image/items/81.png" />
               <h2>charm</h2>
@@ -72,7 +72,7 @@ export default function Store() {
               </div>
             </div>
 			</Grid>
-			<Grid item xs={6} sm={3} md={2}>
+			<Grid item sm={4} md={3} lg={2}>
             <div className="store-item">
               <img className="img" src="image/items/72.png" />
               <h2>dagger</h2>
@@ -83,7 +83,7 @@ export default function Store() {
               </div>
             </div>
 			</Grid>
-			<Grid item xs={6} sm={3} md={2}>
+			<Grid item sm={4} md={3} lg={2}>
             <div className="store-item">
               <img className="img" src="image/items/59.png" />
               <h2>bow</h2>
@@ -94,7 +94,7 @@ export default function Store() {
               </div>
             </div>
 			</Grid>
-			<Grid item xs={6} sm={3} md={2}>
+			<Grid item sm={4} md={3} lg={2}>
             <div className="store-item">
               <img className="img" src="image/items/7.png" />
               <h2>necklace</h2>
@@ -105,7 +105,7 @@ export default function Store() {
               </div>
             </div>
 			</Grid>
-			<Grid item xs={6} sm={3} md={2}>
+			<Grid item sm={4} md={3} lg={2}>
             <div className="store-item">
               <img className="img" src="image/items/25.png" />
               <h2>boots</h2>
@@ -116,7 +116,7 @@ export default function Store() {
               </div>
             </div>
 			</Grid>
-			<Grid item xs={6} sm={3} md={2}>
+			<Grid item sm={4} md={3} lg={2}>
             <div className="store-item">
               <img className="img" src="image/items/28.png" />
               <h2>sword</h2>
