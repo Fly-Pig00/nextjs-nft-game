@@ -126,6 +126,8 @@ p {
 
 .container {
   padding-top: 3%;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 
 .flex {
@@ -1786,7 +1788,7 @@ ul.roadmap-list li {
 
 .store-items {
   margin-top: 30px;
-  gap: 40px 80px;
+  gap: 50px 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1794,8 +1796,8 @@ ul.roadmap-list li {
 }
 
 .store-item {
-  width: 250px;
-  height: auto;
+  width: 270px;
+  height: 320px;
   background: #181920;
   border: 1px solid #ceb162;
   padding: 20px;
