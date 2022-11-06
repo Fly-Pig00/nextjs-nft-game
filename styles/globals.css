@@ -1769,11 +1769,15 @@ ul.roadmap-list li {
 .store-items {
   margin-top: 30px;
   gap: 40px 80px;
-  min-width: 1300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .store-item {
   width: 250px;
+  height: auto;
   background: #181920;
   border: 1px solid #ceb162;
   padding: 20px;
