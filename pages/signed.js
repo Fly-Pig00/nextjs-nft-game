@@ -5,6 +5,7 @@ import Link from "next/link";
 import Grid from "@mui/material/Unstable_Grid2";
 import Badge from "@mui/material/Badge";
 import Stack from "@mui/material/Stack";
+import AnimatedPage from "../components/AnimatedPage";
 
 export default function Home() {
   return (

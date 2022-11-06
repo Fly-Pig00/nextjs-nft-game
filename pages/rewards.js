@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-
+import AnimatedPage from "../components/AnimatedPage";
 import Grid from "@mui/material/Unstable_Grid2";
 import Header from "../components/header";
 import { useEffect, useState } from "react";
@@ -63,7 +63,7 @@ export default function Rewards() {
   }
 
   return (
-    <>
+    <AnimatedPage>
       <Header />
       <div className="container">
         <Head>
@@ -120,6 +120,6 @@ export default function Rewards() {
           </div>
         </Grid>
       </div>
-    </>
+    </AnimatedPage>
   );
 }

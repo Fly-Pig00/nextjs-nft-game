@@ -6,10 +6,10 @@ import Grid from "@mui/material/Unstable_Grid2";
 
 import Header from "../components/header";
 import Leaderboard from "../components/leaderboard";
-
+import AnimatedPage from "../components/AnimatedPage";
 export default function Home() {
   return (
-    <>
+    <AnimatedPage>
       <Header />
       <div className="">
         <Head>
@@ -52,6 +52,6 @@ export default function Home() {
           </Grid>
         </Grid>
       </div>
-    </>
+    </AnimatedPage>
   );
 }

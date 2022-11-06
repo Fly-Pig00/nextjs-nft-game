@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Grid from "@mui/material/Unstable_Grid2";
-
+import AnimatedPage from "../components/AnimatedPage";
 import Header from "../components/header";
 import LootboxCarousel from "../components/lootboxcarousel";
 import { useState } from "react";

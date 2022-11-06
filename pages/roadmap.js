@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Grid from "@mui/material/Unstable_Grid2";
-
+import AnimatedPage from "../components/AnimatedPage";
 import Header from "../components/header";
 
 export default function Home() {
   return (
-    <>
+    <AnimatedPage>
       <Header />
       <div className="container">
         <Head>
@@ -142,6 +142,6 @@ export default function Home() {
         </Grid>
       </div>
       <img src="/image/paragon.png" className="paragon-page" />
-    </>
+    </AnimatedPage>
   );
 }
