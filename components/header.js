@@ -3,7 +3,6 @@ import Login from "../components/login";
 import QuestSidebar from "../components/questsidebar";
 import Link from "next/link";
 import React, { useState, useEffect } from 'react';
-import { Button, Drawer, Box } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import MobileMenu from "./mobilemenu";
 
@@ -19,11 +18,11 @@ export default function Header() {
               <img src="/image/prime-nine_mark.svg" />
             </Link>
           </div>
-          <div class="navbar">
+          <div className="navbar">
             <Link href="/content">About</Link>
-            <div class="dropdown">
-              <button class="dropbtn">Game</button>
-              <div class="dropdown-content">
+            <div className="dropdown">
+              <button className="dropbtn">Game</button>
+              <div className="dropdown-content">
                 <Link href="/roadmap">Roadmap</Link>
                 <Link href="/content2">Tokenomics</Link>
                 <Link href="/team">Team</Link>

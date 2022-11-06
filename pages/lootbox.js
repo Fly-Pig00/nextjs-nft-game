@@ -3,11 +3,64 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Grid from "@mui/material/Unstable_Grid2";
-
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Header from "../components/header";
 import LootboxCarousel from "../components/lootboxcarousel";
 import AnimatedPage from "../components/AnimatedPage";
+import { useState, useEffect } from "react";
+
 export default function Home() {
+  const [items, setItems] = useState([]);
+  const [page, setPage] = useState(1);
+  const [perPage, setPerPage] = useState(10);
+
+  useEffect(() => {
+    let array = [];
+    for (let i = 1; i <= 9; i++) {
+      array.push(i);
+    }
+    setItems(array);
+  }, []);
+
+  const isBigScreen  = useMediaQuery('(min-width:1088px)');
+  const isMediumScreen  = useMediaQuery('(min-width:760px)');
+  const isSmallScreen = useMediaQuery('(min-width:400px)');
+
+  useEffect(() => {
+    if (isBigScreen) {
+      setPerPage(10);
+      setPage(1);
+    } else if (isMediumScreen) {
+      setPerPage(6);
+      setPage(1);
+    } else if (isSmallScreen) {
+      setPerPage(3);
+      setPage(1);
+    }
+  }, [isBigScreen, isMediumScreen, isSmallScreen]);
+
+  const forward = () => {
+    if (page * perPage >= items.length) {
+      setPage(1);
+    } else {
+      setPage(page + 1);
+    }
+  }
+
+  const back = () => {
+    if (page === 1) {
+      setPage(Math.floor((items.length - 1) / perPage) + 1);
+    } else {
+      setPage(page - 1);
+    }
+  }
+
+  const visibleItems = () => {
+    let first = (page - 1) * perPage;
+    let last = Math.min((page * perPage), items.length);
+    return items.slice(first, last);
+  }
+
   return (
     <AnimatedPage>
       <Header />
@@ -63,17 +116,11 @@ export default function Home() {
           <Grid container spacing={2}>
             <Grid className="lootbox-all" xs={12}>
               <div className="header">
-                <img src="/image/back-arrow.png" className="arrow" style={{width:'60px', paddingBottom:"5px"}} />
-                <img src="/image/loot/01.png" className="loot-inventory" />
-                <img src="/image/loot/02.png" className="loot-inventory" />
-                <img src="/image/loot/03.png" className="loot-inventory" />
-                <img src="/image/loot/04.png" className="loot-inventory" />
-                <img src="/image/loot/05.png" className="loot-inventory" />
-                <img src="/image/loot/06.png" className="loot-inventory" />
-                <img src="/image/loot/07.png" className="loot-inventory" />
-                <img src="/image/loot/08.png" className="loot-inventory" />
-                <img src="/image/loot/09.png" className="loot-inventory" />
-                <img src="/image/forward-arrow.png" className="arrow" style={{width:'70px',paddingLeft:"10px", paddingBottom:"5px"}}/>
+                <img src="/image/back-arrow.png" className="arrow" style={{ width: '60px', paddingBottom: "5px" }} />
+                {visibleItems().map((item, idx) => (
+                  <img src={`/image/loot/${item}.png`} key={idx} className="loot-inventory" />
+                ))}
+                <img src="/image/forward-arrow.png" className="arrow" style={{ width: '70px', paddingLeft: "10px", paddingBottom: "5px" }} />
               </div>
             </Grid>
           </Grid>
