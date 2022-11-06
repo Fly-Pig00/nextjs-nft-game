@@ -7,7 +7,6 @@ import CircularProgress from "@mui/material/CircularProgress";
 
 import AnimatedPage from "../components/AnimatedPage";
 import { motion as m } from "framer-motion";
-import AnimatedPage from "../components/AnimatedPage";
 export default function Home() {
   return (
     <div className="">
