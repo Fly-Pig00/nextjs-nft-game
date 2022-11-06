@@ -6,6 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import Collapse from '@mui/material/Collapse';
+import Link from "next/link";
 
 export default function QuestSidebar() {
   const [state, setState] = useState({ right: false });
@@ -39,7 +40,7 @@ export default function QuestSidebar() {
         <List>
           <ListItem disablePadding>
             <ListItemButton className="mobile-navbar">
-              About
+            <Link href="/content">About</Link>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
