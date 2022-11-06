@@ -651,7 +651,10 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
   }
 }
 
-/*------------------------------------------------------ Header -------------------------------------------------*/
+
+/*--------------- Header container -----------*/
+/* -------------------------------------------*/
+
 .left {
   width: 50%;
   float: left;
@@ -672,20 +675,19 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
 }
 
 .right-container {
-  float: right;
+  /* float: right; */
   padding-right: 30px;
 }
 
 .logo {
-  padding: 10px 20px;
-  float: left;
+  padding: 20px 20px;
 }
 
 .logo img {
   width: 50px;
 }
 
-/*--------------- Header container -----------*/
+/* header */
 
 .header-container {
   display: flex;
@@ -700,6 +702,26 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
   margin: 30px 0px;
 }
 
+.mobile-navbar {
+  font-family: "plexesblack";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 15px 0px;
+}
+
+/* hamburger bar */
+
+.hamburger-button {
+  position: absolute;
+  top: 55px;
+  left: 16px;
+  color: #f3dcc2;
+  font-size: 30px;
+  display: none;
+}
+
+
 /* Links inside the navbar */
 .navbar a {
   float: left;
@@ -707,6 +729,16 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
   text-align: center;
   padding: 5px 25px;
   text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
 }
 
 /* The dropdown container */
