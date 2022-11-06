@@ -53,7 +53,7 @@ export default function QuestSidebar() {
   );
 
   return (
-    <div>
+    <>
       {[""].map((anchor, idx) => (
         <React.Fragment key={idx}>
           <div className="quest-button" onClick={toggleDrawer(anchor, true)}>
@@ -75,6 +75,6 @@ export default function QuestSidebar() {
           </Drawer>
         </React.Fragment>
       ))}
-    </div>
+    </>
   );
 }
