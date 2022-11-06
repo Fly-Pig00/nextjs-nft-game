@@ -44,46 +44,30 @@ export default function Home() {
         className="showcase-items2"
       >
         <Grid container spacing={2}>
-          <Grid xs={4}>
+          <Grid md={4} xs={12}>
             <div className="item-2">
               <img src="/image/page/armour.png" width="120px" />
             </div>
+            <h2 className="pTop">Armour</h2>
+            <p>Create unique items</p>
           </Grid>
-          <Grid xs={4}>
+          <Grid md={4} xs={12}>
             <div className="item-2">
               <img src="/image/page/burn.png" width="120px" />
             </div>
+            <h2 className="pTop">Burn</h2>
+            <p>Earn additional benefits</p>
           </Grid>
-          <Grid xs={4}>
+          <Grid md={4} xs={12}>
             <div className="item-2">
               <img src="/image/page/trade.png" width="120px" />
             </div>
-          </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid
-        container
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        className="showcase-item-names2"
-      >
-        <Grid container spacing={2}>
-          <Grid xs={4}>
-            <h2>Armour</h2>
-            <p>Create unique items</p>
-          </Grid>
-          <Grid xs={4}>
-            <h2>Burn</h2>
-            <p>Earn additional benefits</p>
-          </Grid>
-          <Grid xs={4}>
-            <h2>Trade</h2>
+            <h2 className="pTop">Trade</h2>
             <p>Use a trustless trading platform</p>
           </Grid>
         </Grid>
       </Grid>
+
 
       <Grid
         container

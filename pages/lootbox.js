@@ -63,6 +63,7 @@ export default function Home() {
           <Grid container spacing={2}>
             <Grid className="lootbox-all" xs={12}>
               <div className="header">
+                <img src="/image/back-arrow.png" className="arrow" style={{width:'60px', paddingBottom:"5px"}} />
                 <img src="/image/loot/01.png" className="loot-inventory" />
                 <img src="/image/loot/02.png" className="loot-inventory" />
                 <img src="/image/loot/03.png" className="loot-inventory" />
@@ -72,6 +73,7 @@ export default function Home() {
                 <img src="/image/loot/07.png" className="loot-inventory" />
                 <img src="/image/loot/08.png" className="loot-inventory" />
                 <img src="/image/loot/09.png" className="loot-inventory" />
+                <img src="/image/forward-arrow.png" className="arrow" style={{width:'70px',paddingLeft:"10px", paddingBottom:"5px"}}/>
               </div>
             </Grid>
           </Grid>

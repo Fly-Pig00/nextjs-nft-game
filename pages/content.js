@@ -43,27 +43,36 @@ export default function Home() {
           alignItems="center"
           className="showcase-items"
         >
-          <Grid container spacing={2}>
-            <div className="big-circle"></div>
-            <Grid xs={4}>
+          <Grid
+            container
+            spacing={2}
+            direction={{xs:'column', md:'row'}}
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Grid md={4} xs={12}>
               <div className="item">
-                <img src="/image/items/sickle.png" width="120px" />
+                <img src="/image/items/sickle.png" className="content-image"/>
               </div>
+              <h2 className="pTop">Weapons</h2>
             </Grid>
-            <Grid xs={4}>
+            <Grid md={4} xs={12}>
               <div className="item">
-                <img src="/image/items/45.png" width="107px" />
+                <img src="/image/items/45.png" className="content-image"/>
               </div>
+              <h2 className="pTop">Armour</h2>  
             </Grid>
-            <Grid xs={4}>
+            <Grid md={4} xs={12}>
               <div className="item">
-                <img src="/image/items/111.png" width="120px" />
+                <img src="/image/items/111.png"className="content-image" />
               </div>
+              <h2 className="pTop">Charms</h2>
+
             </Grid>
           </Grid>
         </Grid>
 
-        <Grid
+        {/* <Grid
           container
           direction="row"
           justifyContent="center"
@@ -81,7 +90,7 @@ export default function Home() {
               <h2>Charms</h2>
             </Grid>
           </Grid>
-        </Grid>
+        </Grid> */}
 
         <Grid
           container

@@ -74,8 +74,8 @@ export default function Rewards() {
 
         <Grid
           container
-          direction="row"
-          justifyContent="flex-start"
+          direction="column"
+          justifyContent="center"
           alignItems="center"
           className="rewards-page"
         >
