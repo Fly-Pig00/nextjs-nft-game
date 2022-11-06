@@ -6,6 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import Collapse from '@mui/material/Collapse';
+import Link from "next/link";
 
 export default function QuestSidebar() {
   const [state, setState] = useState({ right: false });
@@ -39,38 +40,38 @@ export default function QuestSidebar() {
         <List>
           <ListItem disablePadding>
             <ListItemButton className="mobile-navbar">
-              About
+              <Link href="/content">About</Link>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton className="mobile-navbar" onClick={handleClick}>
+            <ListItemButton className="mobile-navbar">
               Game
             </ListItemButton>
           </ListItem>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItemButton sx={{ pl: 4 }}>
-                Roadmap
+                <Link href="/roadmap">Roadmap</Link>
               </ListItemButton>
               <ListItemButton sx={{ pl: 4 }}>
-                Tokenomics
+                <Link href="/content2">Tokenomics</Link>
               </ListItemButton>
               <ListItemButton sx={{ pl: 4 }}>
-                Team
+                <Link href="/team">Team</Link>
               </ListItemButton>
               <ListItemButton sx={{ pl: 4 }}>
-                Omnichain
+                <Link href="/omnichain">Omnichain</Link>
               </ListItemButton>
             </List>
           </Collapse>
           <ListItem disablePadding>
             <ListItemButton className="mobile-navbar">
-              Mint
+              <Link href="/mint">Mint</Link>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton className="mobile-navbar">
-              Calculator
+              <Link href="/calculator">Calculator</Link>
             </ListItemButton>
           </ListItem>
         </List>
