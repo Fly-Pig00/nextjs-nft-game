@@ -623,6 +623,10 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
   .question-number {
     display: none;
   }
+
+  .question-container {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 700px) {
