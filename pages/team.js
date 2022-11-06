@@ -60,10 +60,6 @@ export default function Team() {
                 </div>
                 <h2>gab</h2>
               </div>
-              <div className="team-member-num">
-                <h1>+15</h1>
-                <h2>more team members working on the game</h2>
-              </div>
             </Grid>
             <Grid xs={6}>
               <div className="header">
@@ -80,6 +76,10 @@ export default function Team() {
               <h2>- prime nine</h2>
             </Grid>
           </Grid>
+          <div className="team-member-num">
+            <h1>+15</h1>
+            <h2>more team members working on the game</h2>
+          </div>
         </Grid>
       </div>
     </AnimatedPage>
