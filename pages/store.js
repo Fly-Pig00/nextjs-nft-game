@@ -25,7 +25,7 @@ export default function Store() {
 					<Grid xs={12}>
 						<div className="header">
 							<h1>store</h1>
-							<img src="/image/div.svg" class="divider"></img>
+							<img src="/image/div.svg" className="divider"></img>
 							<h3>Choose your inventory</h3>
 							<div className="header-item">
 								<h2>featured</h2>

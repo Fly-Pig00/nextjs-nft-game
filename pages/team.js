@@ -68,7 +68,7 @@ export default function Team() {
             <Grid xs={6}>
               <div className="header">
                 <h2>our core team</h2>
-                <img src="/image/div.svg" class="divider"></img>
+                <img src="/image/div.svg" className="divider"></img>
               </div>
               <p>
                 Prime Nine the point of using Lpsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here. making it look like readable English, Many desktop pushlishing packages and web page editors now.

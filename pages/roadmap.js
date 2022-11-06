@@ -6,7 +6,9 @@ import Grid from "@mui/material/Unstable_Grid2";
 import AnimatedPage from "../components/AnimatedPage";
 import Header from "../components/header";
 
+
 export default function Home() {
+
   return (
     <AnimatedPage>
       <Header />

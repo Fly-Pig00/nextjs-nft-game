@@ -3,8 +3,8 @@ export default function Login() {
     <>
       <div className="right-container">
         <div className="login-container">
-          <div class="login-button">Login</div>
-          <div class="signup-button">Sign Up</div>
+          <div className="login-button">Login</div>
+          <div className="signup-button">Sign Up</div>
         </div>
       </div>
     </>
