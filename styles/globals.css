@@ -1553,21 +1553,13 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
 }
 
 /* Mint Page */
-.mint-page {
-  width: 100vw;
-}
-
-.mint-page .header {
-  width: 1000px;
-  text-align: center;
-}
-
-.mint-items {
-  margin: 0px 0px 20px 0px;
-}
-
-.mint-items img {
-  margin-left: 0px;
+.mint-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mint-item-names {
@@ -1585,6 +1577,16 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
   height: 200px;
   text-align: center;
   padding-top: 40px;
+  margin: 0 40px 70px 20px;
+}
+
+.mint-item img {
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
+
+.mint-item h2 {
+  margin-bottom: 5px;
 }
 
 .mint-info {
