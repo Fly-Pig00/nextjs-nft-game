@@ -6,6 +6,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 
 import Header from "../components/header";
 import Invite from "../components/invite";
+import InviteMobile from "../components/inviteMobile"
 import AnimatedPage from "../components/AnimatedPage";
 export default function Home() {
   return (
@@ -47,7 +48,8 @@ export default function Home() {
         >
           <Grid container spacing={2}>
             <Grid className="invite" xs={12}>
-              <Invite />
+              <Invite/>
+              <InviteMobile />
             </Grid>
           </Grid>
         </Grid>

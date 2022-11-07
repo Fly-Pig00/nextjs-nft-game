@@ -21,41 +21,49 @@ const rows = [
 
 export default function Leaderboard() {
   return (
-    <div className="leaderboard invites">
-      <TableContainer>
-        <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-          <TableHead>
-            <TableRow>
-              <TableCell>@player</TableCell>
-              <TableCell align="right">Applied On</TableCell>
-              <TableCell align="right">Referrer</TableCell>
-              <TableCell align="right">Accept</TableCell>
-              <TableCell align="right">Waitlist</TableCell>
-              <TableCell align="right">Action</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow
-                key={row.player}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
+    <div className="leaderboard invite-mobile">
+      {rows.map((row) => (
+        <TableContainer key={row.id} style={{paddingBottom:"60px"}}>
+          <Table size="small" aria-label="a dense table">
+            <TableBody>
+              <TableRow>
+                <TableCell>@player</TableCell>
                 <TableCell component="th" scope="row">
                   {row.player}
                 </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Applied On</TableCell>
                 <TableCell align="right">{row.user}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Referrer</TableCell>
                 <TableCell align="right">{row.level}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Accept</TableCell>
                 <TableCell align="right">{row.id}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Waitlist</TableCell>
                 <TableCell align="right">{row.score}</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell>Action</TableCell>
                 <TableCell align="right">
                   <div className="invite-button2">Profile</div>
                   <div className="invite-button">Accept</div>
                 </TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+
+              <TableRow
+                key={row.player}
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              ></TableRow>
+            </TableBody>
+          </Table>
+        </TableContainer>
+      ))}
     </div>
   );
 }

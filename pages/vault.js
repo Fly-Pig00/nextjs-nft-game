@@ -16,7 +16,7 @@ export default function Vault() {
 
 				<Grid
 					container
-					direction="row"
+					direction="column"
 					justifyContent="flex-start"
 					alignItems="center"
 					className="vault-page"
