@@ -21,7 +21,7 @@ const rows = [
 
 export default function Leaderboard() {
   return (
-    <div className="leaderboard invites">
+    <div className="leaderboard over-mobile">
       <TableContainer>
         <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
           <TableHead>

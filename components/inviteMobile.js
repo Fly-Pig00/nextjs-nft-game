@@ -21,7 +21,7 @@ const rows = [
 
 export default function Leaderboard() {
   return (
-    <div className="leaderboard invite-mobile">
+    <div className="leaderboard mobile">
       {rows.map((row) => (
         <TableContainer key={row.id} style={{paddingBottom:"60px"}}>
           <Table size="small" aria-label="a dense table">
@@ -55,11 +55,6 @@ export default function Leaderboard() {
                   <div className="invite-button">Accept</div>
                 </TableCell>
               </TableRow>
-
-              <TableRow
-                key={row.player}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              ></TableRow>
             </TableBody>
           </Table>
         </TableContainer>

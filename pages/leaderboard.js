@@ -6,6 +6,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 
 import Header from "../components/header";
 import Leaderboard from "../components/leaderboard";
+import LeaderboardMobile from "../components/leaderboardMobile";
 import AnimatedPage from "../components/AnimatedPage";
 export default function Home() {
   return (
@@ -48,6 +49,7 @@ export default function Home() {
           <Grid container spacing={2}>
             <Grid className="leaderboard" xs={12}>
               <Leaderboard />
+              <LeaderboardMobile/>
             </Grid>
           </Grid>
         </Grid>

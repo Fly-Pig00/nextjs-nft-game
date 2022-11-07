@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
-
+import { useState } from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import Header from "../components/header";
 import AnimatedPage from "../components/AnimatedPage";
 export default function Store() {
+  const [selected, setSelected] = useState(0);
+
   return (
     <AnimatedPage>
       <Header />
@@ -29,11 +31,41 @@ export default function Store() {
               <h3>Choose your inventory</h3>
               <div className="header-item">
                 <h2>featured</h2>
-                <img src="/image/store/helmet.svg" className="featured-item" />
-                <img src="/image/store/crown.svg" className="featured-item" />
-                <img src="/image/store/lootbox.svg" className="featured-item" />
-                <img src="/image/store/bag.svg" className="featured-item" />
-                <img src="/image/store/spark.svg" className="featured-item" />
+                <img
+                  src="/image/store/helmet.svg"
+                  className="featured-item"
+                  onClick={() => {
+                    setSelected(1);
+                  }}
+                />
+                <img
+                  src="/image/store/crown.svg"
+                  className="featured-item"
+                  onClick={() => {
+                    setSelected(2);
+                  }}
+                />
+                <img
+                  src="/image/store/lootbox.svg"
+                  className="featured-item"
+                  onClick={() => {
+                    setSelected(3);
+                  }}
+                />
+                <img
+                  src="/image/store/bag.svg"
+                  className="featured-item"
+                  onClick={() => {
+                    setSelected(4);
+                  }}
+                />
+                <img
+                  src="/image/store/spark.svg"
+                  className="featured-item"
+                  onClick={() => {
+                    setSelected(5);
+                  }}
+                />
               </div>
               <img
                 width="500px"
@@ -43,7 +75,7 @@ export default function Store() {
             </div>
           </Grid>
           <Grid container className="store-items">
-            
+            {!(selected == 3) ? (
               <div className="store-item">
                 <img className="img" src="image/items/55.png" />
                 <h2>sickle</h2>
@@ -53,8 +85,10 @@ export default function Store() {
                   <span className="jew_num">7033</span>
                 </div>
               </div>
-            
-            
+            ) : (
+              ""
+            )}
+            {!(selected == 1) ? (
               <div className="store-item">
                 <img className="img" src="image/items/64.png" />
                 <h2>Armour</h2>
@@ -64,19 +98,20 @@ export default function Store() {
                   <span className="jew_num">7033</span>
                 </div>
               </div>
-            
-            
-              <div className="store-item">
-                <img className="img" src="image/items/81.png" />
-                <h2>charm</h2>
-                <h3>Earn them by creating topics in the community forums.</h3>
-                <div className="jew_container">
-                  <img className="jew" src="image/items/102.png" />
-                  <span className="jew_num">7033</span>
-                </div>
+            ) : (
+              ""
+            )}
+
+            <div className="store-item">
+              <img className="img" src="image/items/81.png" />
+              <h2>charm</h2>
+              <h3>Earn them by creating topics in the community forums.</h3>
+              <div className="jew_container">
+                <img className="jew" src="image/items/102.png" />
+                <span className="jew_num">7033</span>
               </div>
-            
-            
+            </div>
+            {!(selected == 4) ? (
               <div className="store-item">
                 <img className="img" src="image/items/72.png" />
                 <h2>dagger</h2>
@@ -86,51 +121,52 @@ export default function Store() {
                   <span className="jew_num">7033</span>
                 </div>
               </div>
-            
-            
-              <div className="store-item">
-                <img className="img" src="image/items/59.png" />
-                <h2>bow</h2>
-                <h3>Earn them by creating topics in the community forums.</h3>
-                <div className="jew_container">
-                  <img className="jew" src="image/items/102.png" />
-                  <span className="jew_num">7033</span>
-                </div>
+            ) : (
+              ""
+            )}
+            {!(selected == 4) ? (
+            <div className="store-item">
+              <img className="img" src="image/items/59.png" />
+              <h2>bow</h2>
+              <h3>Earn them by creating topics in the community forums.</h3>
+              <div className="jew_container">
+                <img className="jew" src="image/items/102.png" />
+                <span className="jew_num">7033</span>
               </div>
-            
-            
-              <div className="store-item">
-                <img className="img" src="image/items/7.png" />
-                <h2>necklace</h2>
-                <h3>Earn them by creating topics in the community forums.</h3>
-                <div className="jew_container">
-                  <img className="jew" src="image/items/102.png" />
-                  <span className="jew_num">7033</span>
-                </div>
+            </div>
+			) : (
+              ""
+            )}
+            <div className="store-item">
+              <img className="img" src="image/items/7.png" />
+              <h2>necklace</h2>
+              <h3>Earn them by creating topics in the community forums.</h3>
+              <div className="jew_container">
+                <img className="jew" src="image/items/102.png" />
+                <span className="jew_num">7033</span>
               </div>
-            
-            
-              <div className="store-item">
-                <img className="img" src="image/items/25.png" />
-                <h2>boots</h2>
-                <h3>Earn them by creating topics in the community forums.</h3>
-                <div className="jew_container">
-                  <img className="jew" src="image/items/102.png" />
-                  <span className="jew_num">7033</span>
-                </div>
+            </div>
+
+            <div className="store-item">
+              <img className="img" src="image/items/25.png" />
+              <h2>boots</h2>
+              <h3>Earn them by creating topics in the community forums.</h3>
+              <div className="jew_container">
+                <img className="jew" src="image/items/102.png" />
+                <span className="jew_num">7033</span>
               </div>
-            
-            
-              <div className="store-item">
-                <img className="img" src="image/items/28.png" />
-                <h2>sword</h2>
-                <h3>Earn them by creating topics in the community forums.</h3>
-                <div className="jew_container">
-                  <img className="jew" src="image/items/102.png" />
-                  <span className="jew_num">7033</span>
-                </div>
+            </div>
+
+            <div className="store-item">
+              <img className="img" src="image/items/28.png" />
+              <h2>sword</h2>
+              <h3>Earn them by creating topics in the community forums.</h3>
+              <div className="jew_container">
+                <img className="jew" src="image/items/102.png" />
+                <span className="jew_num">7033</span>
               </div>
-            </Grid>
+            </div>
+          </Grid>
         </Grid>
       </div>
     </AnimatedPage>

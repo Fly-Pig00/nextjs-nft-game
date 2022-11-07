@@ -33,36 +33,37 @@ const rows = [
 
 export default function Leaderboard() {
   return (
-    <div className="leaderboard over-mobile">
-      <TableContainer>
-        <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-          <TableHead>
+    <div className="leaderboard mobile">
+    {rows.map((row) => (
+      <TableContainer key={row.id} style={{paddingBottom:"60px"}}>
+        <Table size="small" style={{width:"400px"}} aria-label="a dense table">
+          <TableBody>
             <TableRow>
               <TableCell>#</TableCell>
-              <TableCell align="right">User</TableCell>
-              <TableCell align="right">Level</TableCell>
-              <TableCell align="right">ID</TableCell>
-              <TableCell align="right">Score</TableCell>
+              <TableCell align="right">
+                {row.number}
+              </TableCell>
             </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow
-                key={row.number}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">
-                  {row.number}
-                </TableCell>
-                <TableCell align="right">{row.user}</TableCell>
-                <TableCell align="right">{row.level}</TableCell>
-                <TableCell align="right">{row.id}</TableCell>
-                <TableCell align="right">{row.score}</TableCell>
-              </TableRow>
-            ))}
+            <TableRow>
+              <TableCell>USER</TableCell>
+              <TableCell align="right">{row.user}</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>LEVEL</TableCell>
+              <TableCell align="right">{row.level}</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>ID</TableCell>
+              <TableCell align="right">{row.id}</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>SCORE</TableCell>
+              <TableCell align="right">{row.score}</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
       </TableContainer>
-    </div>
+    ))}
+  </div>
   );
 }

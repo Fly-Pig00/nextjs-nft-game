@@ -183,13 +183,13 @@ header {
 }
 
 @media (min-width: 850px) {
-  .invite-mobile {
+  .mobile {
     display: none;
   }
 }
 
 @media (max-width: 850px) {
-  .invites {
+  .over-mobile {
     display: none;
   }
 }
@@ -1665,9 +1665,7 @@ ul.roadmap-list li {
 }
 
 /* Leaderboard Page */
-.leaderboard-page {
-  width: 90vw;
-}
+
 
 .leaderboard td,
 .leaderboard th {
