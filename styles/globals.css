@@ -1223,14 +1223,14 @@ img.quest-icon {
 
 /* Home Page */
 .home-page {
-  width: 100vw;
+  width: 100%;
   height: 75vh;
 }
 
 .dragon-woman {
   position: absolute;
-  bottom: -200px;
-  right: -200px;
+  bottom: 0;
+  right: 0;
 }
 
 .home-all {
@@ -1323,7 +1323,7 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
 
 /* Lootbox Page */
 .lootbox-page {
-  width: 100vw;
+  width: 100%;
 }
 
 .lootbox-button {
