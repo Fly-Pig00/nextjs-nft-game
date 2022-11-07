@@ -1580,27 +1580,36 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
   color: #ceb162;
 }
 
-/* Roadmap Page */
+
+/*------------------ Roadmap Page ----------------*/
+/*------------------------------------------------*/
+
+
+.roadmap-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .roadmap-items-1 {
   margin: 50px 0px;
 }
 
 .roadmap-status {
-  width: 2380px;
+  max-width: 1200px;
   margin-left: 35px;
   margin-top: 20px;
 }
 
 .roadmap-status-2 {
-  width: 2380px;
+  /* width: 2380px; */
   position: relative;
   margin-top: 20px;
   transform: scaleX(-1);
-  left: -1825px;
+  /* left: -1825px; */
 }
 
 .roadmap-item {
-  width: 1000px;
+  max-width: 1000px;
 }
 
 img.roadmap-image {

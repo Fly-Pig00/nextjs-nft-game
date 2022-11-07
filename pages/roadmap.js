@@ -18,7 +18,14 @@ export default function Home() {
           <meta name="description" content="Prime Nine" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <div className="roadmap-container">
+          <div>
+            
+          </div>
+          <div>
 
+          </div>
+        </div>
         <Grid
           container
           direction="row"
@@ -29,7 +36,7 @@ export default function Home() {
           <Grid container spacing={2}>
             <Grid className="content-all" xs={12}>
               <div className="header content-header">
-                <h3>Roadmap</h3>
+                <h2>Roadmap</h2>
                 <img src="/image/div.svg" className="divider" />
                 <h1>Our Future</h1>
               </div>
@@ -44,7 +51,7 @@ export default function Home() {
           alignItems="center"
           className="roadmap-items-1"
         >
-          <Grid container spacing={2}>
+          <Grid container spacing={6}>
             <Grid xs={6}>
               <div className="roadmap-item">
                 <img
@@ -62,10 +69,10 @@ export default function Home() {
                     <li>Game Art & Graphics Release</li>
                   </ul>
                 </div>
-                <img
+                {/* <img
                   src="/image/page/roadmap-status.svg"
                   className="roadmap-status"
-                />
+                /> */}
               </div>
             </Grid>
             <Grid xs={6}>
@@ -97,7 +104,7 @@ export default function Home() {
           alignItems="center"
           className="roadmap-items-1"
         >
-          <Grid container spacing={2}>
+          <Grid container spacing={6}>
             <Grid xs={6}>
               <div className="roadmap-item">
                 <img
@@ -115,10 +122,10 @@ export default function Home() {
                     <li>Game Art & Graphics Release</li>
                   </ul>
                 </div>
-                <img
+                {/* <img
                   src="/image/page/roadmap-status.svg"
                   className="roadmap-status-2"
-                />
+                /> */}
               </div>
             </Grid>
             <Grid xs={6}>
