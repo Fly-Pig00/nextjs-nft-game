@@ -138,6 +138,10 @@ p {
   position: relative;
 }
 
+.center {
+  margin: auto;
+}
+
 /* Header */
 header {
   z-index: 5;
@@ -1598,37 +1602,55 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
 /*------------------------------------------------*/
 
 
-.roadmap-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.roadmap-items-1 {
-  margin: 50px 0px;
-}
-
-.roadmap-status {
-  max-width: 1200px;
-  margin-left: 35px;
-  margin-top: 20px;
+.roadmap-status-1 {
+  width: 82%;
+  position: absolute;
+  right: 0;
 }
 
 .roadmap-status-2 {
-  /* width: 2380px; */
-  position: relative;
-  margin-top: 20px;
-  transform: scaleX(-1);
-  /* left: -1825px; */
+  width: 55%;
+  position: absolute;
+  left: 0
+}
+
+.roadmap-status-mobile {
+  display: none;
 }
 
 .roadmap-item {
-  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  /* justify-content: center; */
+}
+
+@media (max-width: 900px) {
+  .roadmap-status-mobile {
+    display: inline;
+    position: absolute;
+    top: 400px;
+    left: 70px;
+  }
+
+  .roadmap-status-1 {
+    display: none;
+  }
+
+  .roadmap-status-2 {
+    display: none;
+  }
+
+  .roadmap-item {
+    justify-content: center;
+  }
 }
 
 img.roadmap-image {
-  float: left;
+  /* float: left; */
   margin-top: 25px;
 }
+
+
 
 .roadmap-info {
   margin: 0px 20px;

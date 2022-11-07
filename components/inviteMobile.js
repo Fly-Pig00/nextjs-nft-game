@@ -28,7 +28,7 @@ export default function Leaderboard() {
             <TableBody>
               <TableRow>
                 <TableCell>@player</TableCell>
-                <TableCell component="th" scope="row">
+                <TableCell align="right">
                   {row.player}
                 </TableCell>
               </TableRow>
