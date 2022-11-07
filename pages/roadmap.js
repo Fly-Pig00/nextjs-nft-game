@@ -18,14 +18,6 @@ export default function Home() {
           <meta name="description" content="Prime Nine" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className="roadmap-container">
-          <div>
-            
-          </div>
-          <div>
-
-          </div>
-        </div>
         <Grid
           container
           direction="row"
@@ -43,113 +35,113 @@ export default function Home() {
             </Grid>
           </Grid>
         </Grid>
-
         <Grid
           container
           direction="row"
           justifyContent="center"
           alignItems="center"
-          className="roadmap-items-1"
+          spacing={5}
+          sx={{my: 1}}
         >
-          <Grid container spacing={6}>
-            <Grid xs={6}>
-              <div className="roadmap-item">
-                <img
-                  src="/image/page/roadmap-1.png"
-                  width="80px"
-                  className="roadmap-image"
-                />
-
-                <div className="roadmap-info">
-                  <h2 className="roadmap-header">Community Launch</h2>
-                  <ul className="roadmap-list">
-                    <li>Website Launch</li>
-                    <li>Social Media Launch</li>
-                    <li>Game Prototype Demo</li>
-                    <li>Game Art & Graphics Release</li>
-                  </ul>
-                </div>
-                {/* <img
-                  src="/image/page/roadmap-status.svg"
-                  className="roadmap-status"
-                /> */}
+          <Grid item md={1}></Grid>
+          <Grid item xs={12} md={5} >
+            <div className="roadmap-item">
+              <img
+                src="/image/page/roadmap-1.png"
+                width="120px"
+                className="roadmap-image"
+              />
+              <div className="roadmap-info">
+                <h2 className="roadmap-header">Community Launch</h2>
+                <ul className="roadmap-list">
+                  <li>Website Launch</li>
+                  <li>Social Media Launch</li>
+                  <li>Game Prototype Demo</li>
+                  <li>Game Art & Graphics Release</li>
+                </ul>
               </div>
-            </Grid>
-            <Grid xs={6}>
-              <div className="roadmap-item">
-                <img
-                  src="/image/page/roadmap-2.png"
-                  width="80px"
-                  className="roadmap-image"
-                />
 
-                <div className="roadmap-info">
-                  <h2 className="roadmap-header">Community Launch</h2>
-                  <ul className="roadmap-list">
-                    <li>Website Launch</li>
-                    <li>Social Media Launch</li>
-                    <li>Game Prototype Demo</li>
-                    <li>Game Art & Graphics Release</li>
-                  </ul>
-                </div>
-              </div>
-            </Grid>
+            </div>
           </Grid>
+          <Grid item xs={12} md={5}>
+            <div className="roadmap-item">
+              <img
+                src="/image/page/roadmap-2.png"
+                width="120px"
+                className="roadmap-image"
+              />
+              <div className="roadmap-info">
+                <h2 className="roadmap-header">Community Launch</h2>
+                <ul className="roadmap-list">
+                  <li>Website Launch</li>
+                  <li>Social Media Launch</li>
+                  <li>Game Prototype Demo</li>
+                  <li>Game Art & Graphics Release</li>
+                </ul>
+              </div>
+            </div>
+          </Grid>
+          <Grid item md={1}></Grid>
         </Grid>
-
+        <img
+          src="/image/page/roadmap-status-1.png"
+          className="roadmap-status-1"
+        />
         <Grid
           container
           direction="row"
           justifyContent="center"
           alignItems="center"
-          className="roadmap-items-1"
+          spacing={5}
+          sx={{my: 1}}
         >
-          <Grid container spacing={6}>
-            <Grid xs={6}>
-              <div className="roadmap-item">
-                <img
-                  src="/image/page/roadmap-3.png"
-                  width="80px"
-                  className="roadmap-image"
-                />
+          <Grid item md={1}></Grid>
+          <Grid item xs={12} md={5}>
+            <div className="roadmap-item">
+              <img
+                src="/image/page/roadmap-3.png"
+                width="120px"
+                className="roadmap-image"
+              />
 
-                <div className="roadmap-info">
-                  <h2 className="roadmap-header">Community Launch</h2>
-                  <ul className="roadmap-list">
-                    <li>Website Launch</li>
-                    <li>Social Media Launch</li>
-                    <li>Game Prototype Demo</li>
-                    <li>Game Art & Graphics Release</li>
-                  </ul>
-                </div>
-                {/* <img
-                  src="/image/page/roadmap-status.svg"
-                  className="roadmap-status-2"
-                /> */}
+              <div className="roadmap-info">
+                <h2 className="roadmap-header">Community Launch</h2>
+                <ul className="roadmap-list">
+                  <li>Website Launch</li>
+                  <li>Social Media Launch</li>
+                  <li>Game Prototype Demo</li>
+                  <li>Game Art & Graphics Release</li>
+                </ul>
               </div>
-            </Grid>
-            <Grid xs={6}>
-              <div className="roadmap-item">
-                <img
-                  src="/image/page/roadmap-4.png"
-                  width="80px"
-                  className="roadmap-image"
-                />
-
-                <div className="roadmap-info">
-                  <h2 className="roadmap-header">Community Launch</h2>
-                  <ul className="roadmap-list">
-                    <li>Website Launch</li>
-                    <li>Social Media Launch</li>
-                    <li>Game Prototype Demo</li>
-                    <li>Game Art & Graphics Release</li>
-                  </ul>
-                </div>
-              </div>
-            </Grid>
+            </div>
           </Grid>
+          <Grid item xs={12} md={5}>
+            <div className="roadmap-item">
+              <img
+                src="/image/page/roadmap-4.png"
+                width="120px"
+                className="roadmap-image"
+              />
+
+              <div className="roadmap-info">
+                <h2 className="roadmap-header">Community Launch</h2>
+                <ul className="roadmap-list">
+                  <li>Website Launch</li>
+                  <li>Social Media Launch</li>
+                  <li>Game Prototype Demo</li>
+                  <li>Game Art & Graphics Release</li>
+                </ul>
+              </div>
+            </div>
+          </Grid>
+          <Grid item md={1}></Grid>
         </Grid>
+        <img
+          src="/image/page/roadmap-status-2.png"
+          className="roadmap-status-2"
+        />
       </div>
+      <img src="/image/page/roadmap-status-mobile.png" class="roadmap-status-mobile"/>
       <img src="/image/paragon.png" className="paragon-page" />
     </AnimatedPage>
   );

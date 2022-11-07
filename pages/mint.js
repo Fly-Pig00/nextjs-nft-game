@@ -23,7 +23,6 @@ export default function Home() {
           direction="row"
           justifyContent="center"
           alignItems="flex-start"
-          className="mint-page"
         >
           <Grid container spacing={2}>
             <Grid className="mint-all" xs={12}>
@@ -36,112 +35,43 @@ export default function Home() {
           </Grid>
         </Grid>
 
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="flex-start"
-          className="mint-items"
-        >
-          <Grid container spacing={2}>
-            <Grid xs={3}>
-              <div className="mint-item">
-                <img src="/image/mint/ethereum.png" width="120px" />
-              </div>
-            </Grid>
-            <Grid xs={3}>
-              <div className="mint-item">
-                <img src="/image/mint/polygon.png" width="120px" />
-              </div>
-            </Grid>
-            <Grid xs={3}>
-              <div className="mint-item">
-                <img src="/image/mint/binance.png" width="120px" />
-              </div>
-            </Grid>
-            <Grid xs={3}>
-              <div className="mint-item">
-                <img src="/image/mint/avalance.png" width="120px" />
-              </div>
-            </Grid>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="flex-start"
-          className="mint-item-names"
-        >
-          <Grid container spacing={2}>
-            <Grid xs={3}>
-              <h2>Ethereum</h2>
-              <p className="mint-info">12%</p>
-            </Grid>
-            <Grid xs={3}>
-              <h2>Polygon</h2>
-              <p className="mint-info">46%</p>
-            </Grid>
-            <Grid xs={3}>
-              <h2>Binance</h2>
-              <p className="mint-info">58%</p>
-            </Grid>
-            <Grid xs={3}>
-              <h2>Avalance</h2>
-              <p className="mint-info">83%</p>
-            </Grid>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="flex-start"
-          className="mint-items"
-        >
-          <Grid container spacing={2}>
-            <Grid xs={4}>
-              <div className="mint-item">
-                <img src="/image/mint/arbitmrum.png" width="120px" />
-              </div>
-            </Grid>
-            <Grid xs={4}>
-              <div className="mint-item">
-                <img src="/image/mint/optimisim.png" width="120px" />
-              </div>
-            </Grid>
-            <Grid xs={4}>
-              <div className="mint-item">
-                <img src="/image/mint/milkomeda.png" width="120px" />
-              </div>
-            </Grid>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="flex-start"
-          className="mint-item-names"
-        >
-          <Grid container spacing={2}>
-            <Grid xs={4}>
-              <h2>Arbitmrum</h2>
-              <p className="mint-info">91%</p>
-            </Grid>
-            <Grid xs={4}>
-              <h2>Optimisim</h2>
-              <p className="mint-info">15%</p>
-            </Grid>
-            <Grid xs={4}>
-              <h2>Milkomeda</h2>
-              <p className="mint-info">63%</p>
-            </Grid>
-          </Grid>
-        </Grid>
+        <div className="mint-container">
+          <div className="mint-item">
+            <img src="/image/mint/ethereum.png" width="120px" />
+            <h2>Ethereum</h2>
+            <p className="mint-info">12%</p>
+          </div>
+          <div className="mint-item">
+            <img src="/image/mint/polygon.png" width="120px" />
+            <h2>Polygon</h2>
+            <p className="mint-info">46%</p>
+          </div>
+          <div className="mint-item">
+            <img src="/image/mint/binance.png" width="120px" />
+            <h2>Binance</h2>
+            <p className="mint-info">58%</p>
+          </div>
+          <div className="mint-item">
+            <img src="/image/mint/avalance.png" width="120px" />
+            <h2>Avalance</h2>
+            <p className="mint-info">83%</p>
+          </div>
+          <div className="mint-item">
+            <img src="/image/mint/arbitmrum.png" width="120px" />
+            <h2>Arbitmrum</h2>
+            <p className="mint-info">91%</p>
+          </div>
+          <div className="mint-item">
+            <img src="/image/mint/optimisim.png" width="120px" />
+            <h2>Optimisim</h2>
+            <p className="mint-info">15%</p>
+          </div>
+          <div className="mint-item">
+            <img src="/image/mint/milkomeda.png" width="120px" />
+            <h2>Milkomeda</h2>
+            <p className="mint-info">63%</p>
+          </div>
+        </div>
       </div>
     </AnimatedPage>
   );
