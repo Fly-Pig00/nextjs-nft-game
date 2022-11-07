@@ -29,11 +29,11 @@ export default function Store() {
               <h3>Choose your inventory</h3>
               <div className="header-item">
                 <h2>featured</h2>
-                <img src="/image/store/1.png" className="featured-item" />
-                <img src="/image/store/2.png" className="featured-item" />
-                <img src="/image/store/3.png" className="featured-item" />
-                <img src="/image/store/4.png" className="featured-item" />
-                <img src="/image/store/5.png" className="featured-item" />
+                <img src="/image/store/helmet.svg" className="featured-item" />
+                <img src="/image/store/crown.svg" className="featured-item" />
+                <img src="/image/store/lootbox.svg" className="featured-item" />
+                <img src="/image/store/bag.svg" className="featured-item" />
+                <img src="/image/store/spark.svg" className="featured-item" />
               </div>
               <img
                 width="500px"

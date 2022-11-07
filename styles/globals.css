@@ -1716,8 +1716,8 @@ ul.roadmap-list li {
 
 .rewards-scores img {
   position: absolute;
-  top: 8px;
-  left: -20px;
+  top: 10px;
+  left: -25px;
   width: 20px;
 }
 
@@ -2007,7 +2007,7 @@ ul.roadmap-list li {
 
 .spin-bg {
   position: relative;
-  background: url(/image/spin/spin-bg.png);
+  background: url(/image/spin/spin-bg.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -2018,8 +2018,9 @@ ul.roadmap-list li {
 
 .spin-sel {
   position: absolute;
-  top: 18px;
+  top: 25px;
   left: 190px;
+  width: 25%;
   z-index: 3;
 }
 
