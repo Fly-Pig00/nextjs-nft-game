@@ -26,18 +26,13 @@ export default function Home() {
         >
           <Grid container spacing={2}>
             <Grid className="home-all" xs={12}>
-              <div className="main-badge">Mint</div>
-              <div className="main-subline">Extra XP with prime gaming</div>
-              <div className="main-header">Free XP & more</div>
-              <div className="main-info">Free XP Weekend with Prime Nine</div>
-              <div className="main-buttons">
-                <div className="button1">Learn More</div>
-                <div className="button2">Learn More</div>
-              </div>
+              <div className="main-subline">EXTRA XP WITH PRIME GAMING</div>
+              <div className="main-header">AN INVITATION <br/>TO ADVENTURE</div>
+              <div className="main-info">FREE XP WEEKEND WITH PRIME NINE</div>
             </Grid>
           </Grid>
         </Grid>
-        <img src="/image/dragon-woman.png" className="dragon-woman" />
+        <img src="/image/home/chair.png" className="chair" />
       </div>
     </AnimatedPage>
   );

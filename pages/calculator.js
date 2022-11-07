@@ -30,7 +30,7 @@ export default function Home() {
               <div className="header">
                 <h1>Calculator</h1>
                 <img src="/image/div.svg" className="divider" />
-                <h3>
+                <h3 style={{maxWidth:"1000px"}}>
                   The point of using Lorem Ipsum is that it has a more-or-less
                   normal distribution of letters, as opposed to using Content
                   here, content here, making it look like readable English.
@@ -65,13 +65,13 @@ export default function Home() {
           className="calculator-items"
         >
           <Grid container spacing={2}>
-            <Grid xs={6}>
+            <Grid xs={12} md={6}>
               <div className="pn-input">
                 <h2>Tokens Airdroped</h2>
                 <input type="text" name="name" className="standard-input" />
               </div>
             </Grid>
-            <Grid xs={6}>
+            <Grid xs={12} md={6} >
               <div className="pn-input">
                 <h2>Fragments Generated</h2>
                 <input type="text" name="name" className="standard-input" />
@@ -88,13 +88,13 @@ export default function Home() {
           className="calculator-items"
         >
           <Grid container spacing={2}>
-            <Grid xs={6}>
+            <Grid xs={12} md={6}>
               <div className="pn-input">
                 <h2>Tokens Airdroped</h2>
                 <input type="text" name="name" className="standard-input" />
               </div>
             </Grid>
-            <Grid xs={6}>
+            <Grid xs={12} md={6}>
               <div className="pn-input">
                 <h2>Fragments Generated</h2>
                 <input type="text" name="name" className="standard-input" />
@@ -114,7 +114,7 @@ export default function Home() {
             <Grid xs={12}>
               <div className="pn-input">
                 <h2>Amount of PFP’s held</h2>
-                <input type="text" name="name" className="standard-input" />
+                <input type="text" name="name" className="standard-input" style={{marginBottom:"30px"}}/>
               </div>
             </Grid>
           </Grid>
@@ -122,12 +122,12 @@ export default function Home() {
       </div>
       <img
         src="/image/paragons-picture.png"
-        width="500px"
+        width="25%"
         className="paragon-left"
       />
       <img
         src="/image/echoes-picture.png"
-        width="500px"
+        width="25%"
         className="echo-right"
       />
     </AnimatedPage>

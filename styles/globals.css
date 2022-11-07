@@ -1229,13 +1229,21 @@ img.quest-icon {
 
 .dragon-woman {
   position: absolute;
+  width: 25%;
+  bottom: 0;
+  right: 0;
+}
+
+.chair {
+  position: absolute;
+  width: 50%;
   bottom: 0;
   right: 0;
 }
 
 .home-all {
   width: 1000px;
-  padding: 0px 200px;
+  padding: 0px 20px;
   color: #f3dcc2;
   font-family: "plexesblack";
   font-size: 1em;
@@ -1275,7 +1283,7 @@ img.quest-icon {
 
 .main-buttons {
   float: left;
-  width: 500px;
+  /* width: 500px; */
   margin-top: 15px;
 }
 
@@ -1287,7 +1295,7 @@ img.quest-icon {
   text-align: center;
   cursor: pointer;
   padding: 15px;
-  margin-right: 5px;
+  margin-right: 50px;
 }
 
 .button2 {
@@ -1507,11 +1515,10 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
 
 /*------------------------ Calculator-------------------------- */
 .calculator-page {
-  width: 100vw;
+  width: 100%;
 }
 
 .calculator-page .header {
-  width: 1000px;
   text-align: center;
 }
 
@@ -1530,24 +1537,26 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
   margin: 0px;
 }
 
+.pn-input {
+  text-align: center;
+}
+
 .pn-input h2 {
-  text-align: left;
+  text-align: center;
 }
 
 .paragon-left {
   position: fixed;
   bottom: 0px;
   left: -40px;
-  width: 500px;
-  height: 500px;
+  width: 25%;
 }
 
 .echo-right {
   position: fixed;
   bottom: 0px;
   right: -40px;
-  width: 500px;
-  height: 500px;
+  width: 25%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
