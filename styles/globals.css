@@ -1729,8 +1729,8 @@ ul.roadmap-list li {
 
 .rewards-scores img {
   position: absolute;
-  top: 8px;
-  left: -20px;
+  top: 10px;
+  left: -25px;
   width: 20px;
 }
 
@@ -1907,23 +1907,38 @@ ul.roadmap-list li {
   vertical-align: text-top;
 }
 
+
+/*----------------------- team page -----------------*/
+/*---------------------------------------------------*/
+
+
 .team-container {
-  min-width: 1300px;
+  display: flex;
+  flex-direction: row;
 }
 
-.team-page .header h2 {
-  text-align: left;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.team-page h2 {
+.team-detail h1 {
   text-align: left;
 }
 
-.team-page p {
+.team-detail p {
   text-align: left;
   line-height: 30px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+}
+
+.team-detail {
+  width: 50%;
+}
+
+.team-detail img {
+  margin: auto;
 }
 
 .team-member {
@@ -1938,7 +1953,7 @@ ul.roadmap-list li {
 
 .team-member-avatar,
 .team-member-num {
-  width: 250px;
+  width: 280px;
   background: #181920;
   border: 1px solid #ceb162;
   padding: 20px 25px 0px 25px;
@@ -1948,6 +1963,22 @@ ul.roadmap-list li {
   flex-direction: column;
   position: relative;
   height: max-content;
+}
+
+@media (max-width: 1440px) {
+  .team-members {
+    order: 2;
+    width: 100%;
+  }
+
+  .team-detail {
+    width: 100%;
+  }
+
+  .team-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .team-member-num {
@@ -1990,7 +2021,7 @@ ul.roadmap-list li {
 
 .spin-bg {
   position: relative;
-  background: url(/image/spin/spin-bg.png);
+  background: url(/image/spin/spin-bg.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -2001,8 +2032,9 @@ ul.roadmap-list li {
 
 .spin-sel {
   position: absolute;
-  top: 18px;
+  top: 25px;
   left: 190px;
+  width: 25%;
   z-index: 3;
 }
 

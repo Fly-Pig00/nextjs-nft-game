@@ -89,19 +89,19 @@ export default function Rewards() {
           </Grid>
           <Grid className="rewards-scores" container>
             <Grid container xs={12} className="relative">
-              <img src="/image/combat.png" />
+              <img src="/image/rewards/sword.svg" style={{top: 0}}/>
               <Grid xs={3}><h3>COMBAT</h3></Grid>
               <Grid xs={6} />
               <Grid xs={3}><h3 className="rewards-num">12,000</h3></Grid>
             </Grid>
             <Grid container xs={12} className="relative">
-              <img src="/image/offence.png" />
+              <img src="/image/rewards/helmet.svg" />
               <Grid xs={3}><h3>OFFENCE</h3></Grid>
               <Grid xs={6} />
               <Grid xs={3}><h3 className="rewards-num">4,700</h3></Grid>
             </Grid>
             <Grid container xs={12} className="relative">
-              <img src="/image/defence.png" />
+              <img src="/image/rewards/shield.svg" />
               <Grid xs={3}><h3>DEFENCE</h3></Grid>
               <Grid xs={6} />
               <Grid xs={3}><h3 className="rewards-num">3,200</h3></Grid>

@@ -62,7 +62,7 @@ export default function Home() {
                   src="/image/spin/spin-img.png"
                   className={rotate ? "rotate spin-img" : "spin-img"}
                 />
-                <img src="/image/spin/spin-sel.png" className="spin-sel" />
+                <img src="/image/spin/spin-sel.svg" className="spin-sel" />
               </div>
             </Grid>
           </Grid>
