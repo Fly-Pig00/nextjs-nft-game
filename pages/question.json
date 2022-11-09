@@ -1,0 +1,281 @@
+[
+    [
+        {
+            "narrator": "In front of you stands a regal woman with decorative dark blue hair and striking green eyes. Duchess Erzebeth Primevaris is a figure practically everyone in the Bastion recognizes, and now she stands before you to determine your future.",
+            "question": "So, we finally meet. You're not quite what I'd expected from your reputation, but I suppose you'll have to do. Every day I am surrounded by fools and liars, so I need a better idea of who you will be among the rest. Tell me, who would you sacrifice yourself for if you could only save one?",
+            "choose": [
+                {
+                    "answer": "My best friend.",
+                    "evaluate": "neutral",
+                    "continue": "I can admire this course of action. Life for them may become difficult without you, but life is better lived alone than not at all, is it not so?"
+                },
+                {
+                    "answer": "A member of my family.",
+                    "evaluate": "neutral",
+                    "continue":"To some, family is everything. To others, it means nothing. As a Paragon, you are wise to see this way."
+                },
+                {
+                    "answer": "A council member of the Prime Nine.",
+                    "evaluate": "right",
+                    "continue":"Indeed, this is what is expected of us. At the very least, you should make it seem like that is your top priority."
+                },
+                {
+                    "answer": "None of them. I am the most important.",
+                    "evaluate": "wrong",
+                    "continue":"This is a very Vanguard way of thinking. If you are indeed the key to a change in society, then by all means, choose this way. However, that's not what I see standing before me now."
+                }
+            ]
+        },
+        {
+            "narrator": "I'll not lie to you as others will. The Paragons are seen by the commoners as the pinnacle of nobility and honor. The truth, unfortunately, is not so black and white.",
+            "question": "If asked to... deal with an enemy of our order, how would you perform this task?",
+            "choose": [
+                {
+                    "answer": "I will kill them without hesitation.",
+                    "evaluate": "wrong",
+                    "continue":"As compelling as that idea is, you should be wiser in your decisions to take a life. A well-placed poison during a time of peace, for example."
+                },
+                {
+                    "answer": "Convince them to comply with our order.",
+                    "evaluate": "right",
+                    "continue":"Turning an enemy into an ally without violence is a monumentous task. But, if you are to succeed, they are the greatest kind of ally."
+                },
+                {
+                    "answer": "Imprison them. There's no need for violence.",
+                    "evaluate": "neutral",
+                    "continue":"Simple, effective, and it gets them away from society. Not what I would do, but the method is tried and true."
+                },
+                {
+                    "answer": "Get someone else to handle it. This is beneath me.",
+                    "evaluate": "neutral",
+                    "continue":"There is no task that I will assign you that is beneath you, whether it be brokering peace between two sectors or scraping the dung from my shoes. Keep that in mind."
+                }
+            ]
+        },
+        {
+            "narrator": "I have but one more question to ask you before I pass any kind of judgment on how useful you will be in our order.",
+            "question": "If you were asked to do something you might deem unsavory, and you had no way to avoid it, in what way would you do it?",
+            "choose": [
+                {
+                    "answer": "I would hire a vanguard or an echo to do it for me.",
+                    "evaluate": "wrong",
+                    "continue":"It may seem a wise decision to not let your own name be involved. But then the Vanguard or the Echoes take the credit for what may have been a great action."
+                },
+                {
+                    "answer": "Do it myself, but no one will know that I did it.",
+                    "evaluate": "neutral",
+                    "continue":"Some may tell you, 'Working in the shadows isn't usually our way of things, but sometimes it is regrettably unavoidable.' Do not believe them. Our whole order is that of secrets."
+                },
+                {
+                    "answer": "Do it myself, and do it in such a way no one will want to cross me.",
+                    "evaluate": "neutral",
+                    "continue":"See that you do so wisely, being able to protect yourself and your acoomplices. Not much good you can do from prison, I'm afraid."
+                },
+                {
+                    "answer": "Rally a group to my cause to help me.",
+                    "evaluate": "right",
+                    "continue":"I'm beginning to like your way of thinking. Even if there are those who disagree with you, having more followers puts you in the right light."
+                }
+            ]
+        },
+        {
+            "common":[
+                "The future is in your hands, for better or for worse. If I had to say what I think...",
+                "Your bonds to your friends could end up being your downfall, but it can still be a good thing to have these bonds. Temper them well, and prepare yourself for disappointment and betrayal. If you're lucky, you'll only have a few of those to deal with.",
+                "Your actions make me question if you were swapped with a Vanguard baby at birth. They are lesser than us, weaker than us, and I have no desire to see them infiltrate our order. I'll be keeping a close watch on you, best if you always look over your shoulder.",
+                "You place far too much trust in those outside of our order. Not that you should trust those in our order, either, but at least you can assume what may happen with us."
+            ],
+            "result":[
+                "There is a fire in you that burns. Let it burn those who stand in your way, as you overcome enemies far above your standing. Make it count, Paragon Victous.",
+                "There will be times when doubt will come upon you. Prove me wrong, and you'll earn my respect, simple Paragon.",
+                "I am ashamed to share an order with you. In the future, should we cross paths, it would be wise of you to avoid me, Paragon Deftous."
+            ]
+        }
+    ],
+    [
+        {
+            "narrator": "It's important to keep your wits about you in the presence of another Vanguard. The black-haired man before you stands over six feet tall, with piercing red pupils and a few dangerous looking tattoos around his right eye.",
+            "question": "Sit down, shut up, and just listen for a spell. Big brass tells me I'm supposed to ask you a few questions, get you to sign somethin', and then we give you a title. Follow me? First question. If someone you loved was in danger, who would you kill to save them?",
+            "choose": [
+                {
+                    "answer": "My parents come to mind.",
+                    "evaluate": "neutral",
+                    "continue": "That's down nasty. 'Course, they could be a target, or a problem. No sense keepin' something like that around."
+                },
+                {
+                    "answer": "You, in a heartbeat." ,
+                    "evaluate": "right",
+                    "continue":"Wishful thinkin'. You could try, but I expect you'd be floatin' 'round space with the rest of the junk I have to get rid of on Tuesdays."
+                },
+                {
+                    "answer": "Are the Prime Nines available?",
+                    "evaluate": "neutral",
+                    "continue":"If you wanna take a shot at the biggest of brass, be my guest. Don't be surprised if you see yourself down barrel of my own gun at that point."
+                },
+                {
+                    "answer": "No one. Killing is wrong." ,
+                    "evaluate": "wrong",
+                    "continue":"Get that out of your head, or you'll be dead. Either that you can float along with the dreamers."
+                }
+            ]
+        },
+        {
+            "narrator": "",
+            "question": "Part of being one of us is knowing who to kill or steal from when the time is right. Let's say there's a Paragon prick preparing to start a street war with one of our guys. Tell me what you do.",
+            "choose": [
+                {
+                    "answer": "Warn the Vanguard so we can be prepared.",
+                    "evaluate": "neutral",
+                    "continue":"Strength in numbers, I've heard. I usually go it alone, hope it works out, and I usually make it out of there alive."
+                },
+                {
+                    "answer": "Sabotage the weapons supplier of the Paragons.",
+                    "evaluate": "right",
+                    "continue":"The right tricky part of it is finding out where they're gettin' them from. But, if you manage to pull it off, makes our jobs all a lot easier. Unless you screw it up."
+                },
+                {
+                    "answer": "Take care of the Paragon myself. No need for anyone else to get involved." ,
+                    "evaluate": "neutral",
+                    "continue":"Go in, go out, easy money, eh? Come on, use your head, it's never easy. You can go ahead and go in alone, see what 'appens to you. I do it, no problem. Can you?"
+                },
+                {
+                    "answer": "Wait for the Paragon to strike first." ,
+                    "evaluate": "wrong",
+                    "continue":"That's a damn good way to get yourself killed. Sure, sure, by all means, wait for the bastards to kill you or one of your friends first. Just don't include me."
+                }
+            ]
+        },
+        {
+            "narrator": "",
+            "question": "Alright, last question. Get it out of your head now that you aren't going to hurt anyone, yeah? You need a weapon to make it work, so tell me what weapon you like.",
+            "choose": [
+                {
+                    "answer": "My bare fists are all I need." ,
+                    "evaluate": "neutral",
+                    "continue":"In my experience, being good with your hands is great. But, you'll die without a gun in them."
+                },
+                {
+                    "answer": "I like shotguns.",
+                    "evaluate": "neutral",
+                    "continue":"Now you're speaking my damn language. Nothin' quite like the feeling of blasting a hole the size of a sector in a bastard who gets too close."
+                },
+                {
+                    "answer": "A rifle. I like when my enemies don't know who killed them.",
+                    "evaluate": "right",
+                    "continue":"Always love getting my hands on a good rifle. Most people I kill with one don't even realize they're about to die."
+                },
+                {
+                    "answer": "Swords. They're a lot more elegant.",
+                    "evaluate": "wrong",
+                    "continue":"Those are only good in the right hands. And if no one around you has a gun. And if you're some Paragon prick."
+                }
+            ]
+        },
+        {
+            "common":[
+                "Now that's really all there is to it. Guess I'm supposed to give you a title now, eh? Let me think on it...",
+                "The Bastion is dangerous. More dangerous than you realize. And if you think you can get through it without killin' someone, join the bloody dreamers. Kill the right people.",
+                "You may be too good a person to really make things work out here. Ever heard the term 'strike first?' Might wanna learn it. Get it tattooed on yourself. Look at that tattoo in the mirror every morning. Or don't. Strike last. See where that gets you.",
+                "Some of us like fighting in different ways. That's fine. Just don't be a bloody dumbass and get your allies killed because you wanted to look cool. You'll have no sympathy at all from me."
+            ],
+            "result":[
+                "I can see myself relying on someone like you in the future. Don't screw it up, and we'll be allies one day. For now, take your place among the Prime Vanguard.",
+                "You'll fit right in 'ere. Do what you're told, don't ask questions, and perhaps you'll be a leader someday. Otherwise you'll answer to me and this big gun here. Go out, Vanguard.",
+                "I hope I never have to take a job with you. In fact, if I do, I might just kill you myself, just to make a point. Not sure if I should even call you it, but you'll be known as a TRL Vanguard."
+            ]
+        }
+    ],
+    [
+        {
+            "narrator": "It's been a long time since you left your home planet to ruin with the rest of your population. You've been recognized as having true potential to be of service to the Bastion, now to be sworn in as an Echo. Standing before you is a woman. She has long, teal hair, a metal baseball bat over her shoulder, and a short red coat.",
+            "question": "It's not every day I get to meet someone worth becoming an Echo. I'm Sai. Gotta run you through a few questions so we know what to do with you. Keep in mind, you wanna impress me, got it? Okay, you see someone getting mugged in the street, what do you do?",
+            "choose": [
+                {
+                    "answer": "I go find the proper authorities." ,
+                    "evaluate": "wrong",
+                    "continue": "That's the wrong answer. What if they start investigating you, huh? You think some Paragon Enforcer is gonna take it easy on you?"
+                },
+                {
+                    "answer": "If the guy getting mugged looks rich, join the mugging." ,
+                    "evaluate": "right",
+                    "continue":"Hah, I mean I can't blame you for wanting to get in on the action of an easy score. Just make sure you lay low after."
+                },
+                {
+                    "answer": "I step in and stop it myself." ,
+                    "evaluate": "neutral",
+                    "continue":"Ohhh, nice. You save them, and then they owe you, right? I love having rich dudes in my pocket."
+                },
+                {
+                    "answer": "Just keep walking."  ,
+                    "evaluate": "neutral",
+                    "continue":"If it's not your day, you know, it's not your day. No need to dwell on it, just keep going."
+                }
+            ]
+        },
+        {
+            "narrator": "",
+            "question": "We get results, you feel me? You'll get all kinds of jobs, like assassinating a high priority target or robbing some corrupt politician. We need to know how you would get the job done.",
+            "choose": [
+                {
+                    "answer": "I get in and out before anyone has a chance to notice me." ,
+                    "evaluate": "neutral",
+                    "continue":"Stealth will keep you safe. The only problem is, it can be hard to get more jobs if no one knows it was you. Better to do this if you like working for yourself."
+                },
+                {
+                    "answer": "People should know it was me, so they know not to mess with me.",
+                    "evaluate": "wrong",
+                    "continue":"Wow. What do you think you are, a Vanguard? We can't just go announcing to everyone that it was us, we work in the shadows."
+                },
+                {
+                    "answer": "I like to leave a calling card." ,
+                    "evaluate": "right",
+                    "continue":"Calling cards are a good way to get caught, but an even better way to get more jobs. I've known Echoes who've left calling cards at crimes they didn't even commit."
+                },
+                {
+                    "answer": "Gather a crew, split the payment.",
+                    "evaluate": "neutral",
+                    "continue":"Having a crew to back you up is always important. Always. Fill it with people you can trust, but never go in without a backup plan if they turn on you."
+                }
+            ]
+        },
+        {
+            "narrator": "",
+            "question": "Okay, I think this is the last question. Sorry about all the formality and all that; I hate this whole thing. You 'find' a relic, valuable, or some kind of thing people really, really want. Where do you take it?",
+            "choose": [
+                {
+                    "answer": "I sell it to a fence.",
+                    "evaluate": "neutral",
+                    "continue":"Fences are going to be your best friends in the underground. Some things you'll end up with are just too valuable to do anything else with."
+                },
+                {
+                    "answer": "Take it back to where it rightfully belongs." ,
+                    "evaluate": "wrong",
+                    "continue":"That's kind of noble, I guess. Sometimes you won't be able to, because sometimes the planet they rightfully belong to is a million lightyears from where we are."
+                },
+                {
+                    "answer": "Sell it back to the owners for a bargain price.",
+                    "evaluate": "right",
+                    "continue":"Ballsy. I like it. You just have to be careful not to get caught, and remember, you probably won't be able to steal it again. At least, not in the same way."
+                },
+                {
+                    "answer": "Keep it." ,
+                    "evaluate": "neutral",
+                    "continue":"Hey, sometimes the stuff you take is just way too cool to give to anyone else. These eyes of mine can see through just about anything, and they were definitely not legal."
+                }
+            ]
+        },
+        {
+            "common":[
+                "I'm done with all those questions now. So, what do I think of you...?",
+                "You ain't really one to get yourself involved in something that doesn't have anything to do with you. That's a good way to live, if you don't want to rely on anyone else. I'm not judging, but be careful with that, yeah?",
+                "Team efforts should never go to waste. Just make sure all of the money actually stays in your little 'family,' and then no one gets hurt. But, then again, maybe someone stabs you in the back. Careful out there.",
+                "One of these days I'd love to see the kind of shit you have stored up. I bet it's kind of a hoarders den, but only with the coolest stuff, am I right?"
+            ],
+            "result":[
+                "I got a good feeling about you. If I never need help with somethin', give me a call, Shadow Echo.",
+                "Hey, we always need more numbers. There's nothing wrong with just bein' kinda average, right, Echo?",
+                "Just try not to get in everyone's way. You're lucky you're even being considered for more work, Cheap Echo."
+            ]
+        }
+    ]
+]

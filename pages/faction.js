@@ -85,7 +85,7 @@ export default function Home() {
                 onMouseLeave={paragonLeaveCard}
               >
                 <div className="faction-card">
-                  <Link href="/questionaire">
+                  <Link href="/questionaire?id=1">
                     <img src="/image/paragons.png" />
                   </Link>
                   <h2>Paragons</h2>
@@ -105,14 +105,14 @@ export default function Home() {
                 onMouseLeave={vanguardLeaveCard}
               >
                 <div className="faction-card">
-                  <Link href="/questionaire">
+                  <Link href="/questionaire?id=2">
                     <img src="/image/vanguards.png" />
                   </Link>
                   <h2>Vanguards</h2>
                   <p className={vanguard}>
                     Those who had to pave their own way to becoming nobles, not through some nonsense 
                     birthright. To the outsider, their ways are seen as the way of thieves, cutthroats, 
-                    and blackmailers, but on the inside... it's pretty much the same. Their ways are 
+                    and blackmailers, but on the inside... it&apos;s pretty much the same. Their ways are 
                     essential to maintaining balance.
                   </p>
                 </div>
@@ -125,7 +125,7 @@ export default function Home() {
                 onMouseLeave={echoesLeaveCard}
               >
                 <div className="faction-card">
-                  <Link href="/questionaire">
+                  <Link href="/questionaire?id=3">
                     <img src="/image/echoes.png" />
                   </Link>
                   <h2>Echoes</h2>

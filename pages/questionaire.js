@@ -11,22 +11,27 @@ import { motion as m } from "framer-motion";
 import { Howl } from "howler";
 
 import React, { useState, useEffect } from "react";
+import questionData from "./question.json";
 
 const questions = [
   [
-    'Narrator: In front of you stands a regal man with shoulder length auburn hair and black eyes. Count Wenham was your instructor at the academy before your graduation, and now he stands before you to determine your future in the Bastion.',
+    "Narrator: In front of you stands a regal man with shoulder length auburn hair and black eyes. Count Wenham was your instructor at the academy before your graduation, and now he stands before you to determine your future in the Bastion.",
     `"You think you have what it takes to make it out there, young one? A Paragon's life is full of making difficult choices. Make these next choices wisely. Tell me, who would you sacrifice yourself for if you could only save one?"`,
-    'Your Closest Friend Or Comrade.',
-    'A member of your immediate family.',
-    'A council member of the Prime Nine.',
-    'None of them. I am the most important.'
-  ]
+    "Your Closest Friend Or Comrade.",
+    "A member of your immediate family.",
+    "A council member of the Prime Nine.",
+    "None of them. I am the most important.",
+  ],
 ];
 
 export default function Home() {
+  const [step, setStep] = useState(0);
+
   const transition = new Howl({
     src: "./sound/transition.mp3",
   });
+  const data = questionData[0];
+  console.log(data);
 
   useEffect(() => {
     transition.play();
@@ -61,16 +66,9 @@ export default function Home() {
                     </Badge>
                   </div>
                   <img src="/image/div2.svg" className="question-divider" />
-                  <h1>Find my faction</h1>
-                  <p>
-                    Narrator: In front of you stands a regal man with shoulder length auburn hair
-                    and black eyes. Count Wenham was your instructor at the academy before your
-                    graduation, and now he stands before you to determine your future in the Bastion.
-                  </p>
-                  <p>"You think you have what it takes to make it out there, young one? A Paragon's
-                    life is full of making difficult choices. Make these next choices wisely.
-                    Tell me, who would you sacrifice yourself for if you could only save one?"
-                  </p>
+                  <h1>Narrator</h1>
+                  <p>{data[step].narrator}</p>
+                  <p> {data[step].question}</p>
                 </div>
 
                 <div className="logo-intro">
@@ -92,7 +90,7 @@ export default function Home() {
                       </Link>
                     </div>
                     <div className="question-answer-content">
-                      Your closest friend or comrade.
+                      {data[step].choose[0].answer}
                     </div>
                   </Grid>
 
@@ -102,7 +100,7 @@ export default function Home() {
 
                   <Grid xs={5} className="question-answer-right">
                     <div className="question-answer-content">
-                      Your closest friend or comrade.
+                      {data[step].choose[1].answer}
                     </div>
                     <div className="question-answer-img">
                       <Link href="/signed">
@@ -127,7 +125,7 @@ export default function Home() {
                       </Link>
                     </div>
                     <div className="question-answer-content">
-                      A council member of the Prime Nine.
+                      {data[step].choose[2].answer}
                     </div>
                   </Grid>
 
@@ -135,7 +133,7 @@ export default function Home() {
 
                   <Grid xs={5} className="question-answer-right">
                     <div className="question-answer-content">
-                      None of them. I am the most important.
+                      {data[step].choose[3].answer}
                     </div>
                     <div className="question-answer-img">
                       <Link href="/signed">
