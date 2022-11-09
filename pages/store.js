@@ -4,8 +4,118 @@ import { useState } from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import Header from "../components/header";
 import AnimatedPage from "../components/AnimatedPage";
+import Box from "@mui/material/Box";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
+
+const data = [
+  [
+    {
+      name: "sickle",
+      url: "image/items/55.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "Armour",
+      url: "image/items/64.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+  ],
+  [
+    {
+      name: "charm",
+      url: "image/items/81.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "dagger",
+      url: "image/items/72.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "bow",
+      url: "image/items/59.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+  ],
+  [
+    {
+      name: "charm",
+      url: "image/items/81.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "Armour",
+      url: "image/items/64.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "bow",
+      url: "image/items/59.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "necklace",
+      url: "image/items/7.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "boots",
+      url: "image/items/25.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "sword",
+      url: "image/items/28.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+  ],
+  [
+    {
+      name: "charm",
+      url: "image/items/81.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "Armour",
+      url: "image/items/64.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "bow",
+      url: "image/items/59.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "sword",
+      url: "image/items/28.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+  ],
+  [
+    {
+      name: "Armour",
+      url: "image/items/64.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "necklace",
+      url: "image/items/7.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "sword",
+      url: "image/items/28.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+  ],
+];
 export default function Store() {
-  const [selected, setSelected] = useState(0);
+  const [value, setValue] = useState(0);
+  console.log(data[value]);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
     <AnimatedPage>
@@ -31,41 +141,53 @@ export default function Store() {
               <h3>Choose your inventory</h3>
               <div className="header-item">
                 <h2>featured</h2>
-                <img
-                  src="/image/store/helmet.svg"
-                  className="featured-item"
-                  onClick={() => {
-                    setSelected(1);
-                  }}
-                />
-                <img
-                  src="/image/store/crown.svg"
-                  className="featured-item"
-                  onClick={() => {
-                    setSelected(2);
-                  }}
-                />
-                <img
-                  src="/image/store/lootbox.svg"
-                  className="featured-item"
-                  onClick={() => {
-                    setSelected(3);
-                  }}
-                />
-                <img
-                  src="/image/store/bag.svg"
-                  className="featured-item"
-                  onClick={() => {
-                    setSelected(4);
-                  }}
-                />
-                <img
-                  src="/image/store/spark.svg"
-                  className="featured-item"
-                  onClick={() => {
-                    setSelected(5);
-                  }}
-                />
+                <Tabs
+                  value={value}
+                  onChange={handleChange}
+                  indicatorColor="secondary"
+                  aria-label="wrapped label tabs example"
+                >
+                  <Tab
+                    icon={
+                      <img
+                        src="/image/store/helmet.svg"
+                        className="featured-item"
+                      />
+                    }
+                  ></Tab>
+                  <Tab
+                    icon={
+                      <img
+                        src="/image/store/crown.svg"
+                        className="featured-item"
+                      />
+                    }
+                  />
+                  <Tab
+                    icon={
+                      <img
+                        src="/image/store/lootbox.svg"
+                        className="featured-item"
+                      />
+                    }
+                  />
+                  <Tab
+                    icon={
+                      <img
+                        src="/image/store/bag.svg"
+                        className="featured-item"
+                      />
+                    }
+                  />
+                  <Tab
+                    icon={
+                      <img
+                        src="/image/store/spark.svg"
+                        className="featured-item"
+                      />
+                    }
+                  />
+                </Tabs>
               </div>
               <img
                 width="500px"
@@ -75,97 +197,19 @@ export default function Store() {
             </div>
           </Grid>
           <Grid container className="store-items">
-            {!(selected == 3) ? (
-              <div className="store-item">
-                <img className="img" src="image/items/55.png" />
-                <h2>sickle</h2>
-                <h3>Earn them by creating topics in the community forums.</h3>
-                <div className="jew_container">
-                  <img className="jew" src="image/items/102.png" />
-                  <span className="jew_num">7033</span>
+            {data[value].map((item) => {
+              return (
+                <div className="store-item" key={item.url}>
+                  <img className="img" src={item.url} />
+                  <h2>{item.name}</h2>
+                  <h3>{item.description}</h3>
+                  <div className="jew_container">
+                    <img className="jew" src="image/items/102.png" />
+                    <span className="jew_num">7033</span>
+                  </div>
                 </div>
-              </div>
-            ) : (
-              ""
-            )}
-            {!(selected == 1) ? (
-              <div className="store-item">
-                <img className="img" src="image/items/64.png" />
-                <h2>Armour</h2>
-                <h3>Earn them by creating topics in the community forums.</h3>
-                <div className="jew_container">
-                  <img className="jew" src="image/items/102.png" />
-                  <span className="jew_num">7033</span>
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-
-            <div className="store-item">
-              <img className="img" src="image/items/81.png" />
-              <h2>charm</h2>
-              <h3>Earn them by creating topics in the community forums.</h3>
-              <div className="jew_container">
-                <img className="jew" src="image/items/102.png" />
-                <span className="jew_num">7033</span>
-              </div>
-            </div>
-            {!(selected == 4) ? (
-              <div className="store-item">
-                <img className="img" src="image/items/72.png" />
-                <h2>dagger</h2>
-                <h3>Earn them by creating topics in the community forums.</h3>
-                <div className="jew_container">
-                  <img className="jew" src="image/items/102.png" />
-                  <span className="jew_num">7033</span>
-                </div>
-              </div>
-            ) : (
-              ""
-            )}
-            {!(selected == 4) ? (
-            <div className="store-item">
-              <img className="img" src="image/items/59.png" />
-              <h2>bow</h2>
-              <h3>Earn them by creating topics in the community forums.</h3>
-              <div className="jew_container">
-                <img className="jew" src="image/items/102.png" />
-                <span className="jew_num">7033</span>
-              </div>
-            </div>
-			) : (
-              ""
-            )}
-            <div className="store-item">
-              <img className="img" src="image/items/7.png" />
-              <h2>necklace</h2>
-              <h3>Earn them by creating topics in the community forums.</h3>
-              <div className="jew_container">
-                <img className="jew" src="image/items/102.png" />
-                <span className="jew_num">7033</span>
-              </div>
-            </div>
-
-            <div className="store-item">
-              <img className="img" src="image/items/25.png" />
-              <h2>boots</h2>
-              <h3>Earn them by creating topics in the community forums.</h3>
-              <div className="jew_container">
-                <img className="jew" src="image/items/102.png" />
-                <span className="jew_num">7033</span>
-              </div>
-            </div>
-
-            <div className="store-item">
-              <img className="img" src="image/items/28.png" />
-              <h2>sword</h2>
-              <h3>Earn them by creating topics in the community forums.</h3>
-              <div className="jew_container">
-                <img className="jew" src="image/items/102.png" />
-                <span className="jew_num">7033</span>
-              </div>
-            </div>
+              );
+            })}
           </Grid>
         </Grid>
       </div>
