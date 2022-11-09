@@ -41,7 +41,7 @@ body {
     sans-serif;
   color: #ffffff;
   background: url(/image/prime-nine_background.png);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;   
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1288,13 +1288,6 @@ img.quest-icon {
   right: 0;
 }
 
-.chair {
-  position: absolute;
-  width: 50%;
-  bottom: 0;
-  right: 0;
-}
-
 .home-all {
   width: 1000px;
   padding: 0px 20px;
@@ -1346,6 +1339,7 @@ img.quest-icon {
   background: url(/image/button-border.svg);
   background-repeat: no-repeat;
   width: 170px;
+  margin-bottom: 10px;
   text-align: center;
   cursor: pointer;
   padding: 15px;
@@ -1424,7 +1418,7 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
 }
 
 .vanguard-page {
-  position: fixed;
+  position: absolute;
   bottom: 0px;
   right: 0px;
   width: 30%;
@@ -2154,4 +2148,90 @@ ul.roadmap-list li {
   to {
     transform: rotate(var(--angle));
   }
+}
+
+/*----------------------home2-----------------------*/
+
+.chair {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 0px;
+}
+
+.container-home2 {
+  padding-top: 3%;
+  position: relative;
+}
+
+.home2-div1 {
+  padding-left: 8%;
+  padding-right: 8%;
+  position: relative;
+}
+
+.man-sword {
+  position: absolute;
+  max-height: 100%;
+  max-width: 50%;
+  left: 0;
+  bottom: 0px;
+}
+
+.textleft {
+  text-align: left;
+}
+
+.mdown {
+  margin-bottom: 0px;
+}
+
+.mup {
+  margin-top: 0px;
+}
+
+.home2-vanguard {
+  position: absolute;
+  max-height: 100%;
+  max-width: 40%;
+  right: 0;
+  bottom: 0px;
+}
+
+.button-mint {
+  background: #4d8fae;
+  width: 170px;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 23px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.home4-vanguard {
+  position: absolute;
+  width: 40%;
+  right: 0;
+  bottom: 0px;
+}
+
+.home4-stones {
+  position: absolute;
+  max-height: 100%;
+  max-width: 40%;
+  left: 0;
+  bottom:-30%;
+  z-index: 6;
+}
+
+.black {
+  color: black;
+}
+
+.worrier {
+  position: absolute;
+  width: 40%;
+  left: 0;
+  bottom: 20%;
 }
