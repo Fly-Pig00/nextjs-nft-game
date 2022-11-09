@@ -41,7 +41,10 @@ export default function Home() {
         <div style={{ textAlign: "center", marginTop: "-12px" }}>
           <img src="/image/home/divider.png" style={{ width: "80%" }} />
         </div>
-        <div style={{ paddingBottom: "10%" }}>
+        <div style={{ paddingBottom: "10%",background: "url(/image/home/bg6.png)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center", }}>
           <h1>The bastion</h1>
           <h3>
             An Adventurer who&apos;s lost all memories stands at the center of a
