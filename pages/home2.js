@@ -38,8 +38,8 @@ export default function Home() {
           </Grid>
           <img src="/image/home/chair.png" className="chair" />
         </div>
-        <div style={{ textAlign: "center", marginTop: "-12px" }}>
-          <img src="/image/home/divider.png" style={{ width: "80%" }} />
+        <div className="home2-divider">
+          <img src="/image/home/divider.png" width="80%" />
         </div>
         <div className="home2-div1">
           <Grid
@@ -51,14 +51,13 @@ export default function Home() {
             <Grid container spacing={2}>
               <Grid xs={12}>
                 <div
-                  className="header"
-                  style={{ paddingTop: "20%", paddingLeft: "40%" }}
+                  className="header home2-div3"
                 >
                   <h3 className="textleft mdown">Who are we?</h3>
                   <img
                     src="/image/home/divider2.png"
                     className="divider"
-                    style={{ width: "80%" }}
+                    width="80%"
                   />
                   <h1 className="textleft mup">WHY PRIME NINE?</h1>
                   <p className="textleft">
@@ -82,8 +81,8 @@ export default function Home() {
           </Grid>
           <img src="/image/home/man-sword.png" className="man-sword" />
         </div>
-        <div style={{ textAlign: "center", marginTop: "-12px" }}>
-          <img src="/image/home/divider.png" style={{ width: "100%" }} />
+        <div className="home2-divider">
+          <img src="/image/home/divider.png" width="100%" />
         </div>
         <div className="home2-div1">
           <Grid
@@ -94,25 +93,18 @@ export default function Home() {
           >
             <Grid container spacing={2}>
               <Grid xs={12}>
-                <div
-                  className="header"
-                  style={{
-                    paddingTop: "10%",
-                    paddingRight: "20%",
-                    paddingBottom: "20%",
-                  }}
-                >
+                <div className="header home2-div2">
                   <h1 className="textleft mdown">Our Values</h1>
                   <img
                     src="/image/home/divider2.png"
                     className="divider"
-                    style={{ width: "80%" }}
+                    width="80%"
                   />
                   <h4 className="textleft ">
                     Three things define who we are, what we do, and how we do
                     it:
                   </h4>
-                  <h3 className="textleft" style={{ marginBottom: "7px" }}>
+                  <h3 className="textleft home2-mb7" >
                     Community First
                   </h3>
                   <h3 className="textleft mup">
@@ -120,7 +112,7 @@ export default function Home() {
                     culture, we thrive to empower them in everything we do. They
                     will always be the #1 priority for us.av
                   </h3>
-                  <h3 className="textleft" style={{ marginBottom: "7px" }}>
+                  <h3 className="textleft home2-mb7" >
                     Raise The Bar
                   </h3>
                   <h3 className="textleft mup">
@@ -130,8 +122,7 @@ export default function Home() {
                     outstanding experiences to the world.
                   </h3>
                   <h3
-                    className="textleft"
-                    style={{ marginBottom: "7px", marginTop: "40px" }}
+                    className="textleft home2-mbt"
                   >
                     All About the Long Term
                   </h3>
@@ -146,12 +137,20 @@ export default function Home() {
           </Grid>
           <img src="/image/vanguard.png" className="home2-vanguard" />
         </div>
-        <div style={{ textAlign: "center", marginTop: "-12px" }}>
-          <img src="/image/home/divider.png" style={{ width: "80%" }} />
+        <div className="home2-divider">
+          <img src="/image/home/divider.png" width="80%" />
         </div>
-        <div className="home2-div1" style={{ paddingTop: "10%", background:"url(/image/home/bg2.png)",backgroundRepeat: "no-repeat",
+        <div
+          className="home2-div1"
+          style={{
+            paddingTop: "10%",
+            background: "url(/image/home/bg2.png)",
+            backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            backgroundPosition: "center", zIndex:"5" }}>
+            backgroundPosition: "center",
+            zIndex: "5",
+          }}
+        >
           <Grid
             container
             direction="row"
@@ -163,7 +162,6 @@ export default function Home() {
               <Grid className="content-all" xs={12}>
                 <div
                   className="header content-header"
-                  style={{ textAlign: "center", paddingBottom:"5%" }}
                 >
                   <h1>learn about our pfps</h1>
                   <img src="/image/div.svg" className="divider" />
@@ -192,7 +190,7 @@ export default function Home() {
                   <img src="/image/home/paragons-logo.png" width="40px" />
                 </div>
                 <h2>Paragon</h2>
-                <p style={{paddingLeft:"20%",paddingRight:"20%"}}>
+                <p className="home2-plr">
                   Few leave the corporate world with their lives - fewer still
                   with their souls intact. You&apos;ve been there - you&apos;ve
                   bent the rules, exploited secrets and weaponized information.
@@ -208,7 +206,7 @@ export default function Home() {
                   <img src="/image/home/vanguards-logo.png" width="40px" />
                 </div>
                 <h2>Vanguards</h2>
-                <p style={{paddingLeft:"20%",paddingRight:"20%"}}>
+                <p style={{ paddingLeft: "20%", paddingRight: "20%" }}>
                   They say if you wanna understand the streets, you gotta live
                   &apos;em. Gangs, fixers, dolls, small-time pushers - you were
                   raised by them all. Down here the law of the jungle dictates
@@ -224,17 +222,21 @@ export default function Home() {
                   <img src="/image/home/echoes-logo.png" width="40px" />
                 </div>
                 <h2>Echoes</h2>
-                <p style={{paddingLeft:"20%",paddingRight:"20%"}}>
+                <p style={{ paddingLeft: "20%", paddingRight: "20%" }}>
                   Roaming the Badlands, looting scrapyards, raiding fuel depots
-                  - life on the road wasn&apos;t easy. But growing up in a nomad clan
-                  has its perks. Honesty, integrity, and a love of freedom -
-                  qualities that few in Night City possess, and no amount of
+                  - life on the road wasn&apos;t easy. But growing up in a nomad
+                  clan has its perks. Honesty, integrity, and a love of freedom
+                  - qualities that few in Night City possess, and no amount of
                   money can buy.
                 </p>
               </Grid>
             </Grid>
           </Grid>
-          <h1 style={{textAligh:"center", paddingBottom:"10%", paddingTop:"10%"}}>Journey through the universe on the Bastion</h1>
+          <h1
+            className="home2-foot"
+          >
+            Journey through the universe on the Bastion
+          </h1>
         </div>
       </div>
     </AnimatedPage>

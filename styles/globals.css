@@ -41,7 +41,7 @@ body {
     sans-serif;
   color: #ffffff;
   background: url(/image/prime-nine_background.png);
-  background-repeat: no-repeat;   
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -198,7 +198,6 @@ header {
   }
 }
 
-
 /* Fixed Gold Lines */
 .lines-top-left {
   position: fixed;
@@ -326,7 +325,6 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
 
 /*---------------------------------------- Faction Screen -----------------------------------*/
 
-
 .faction-page {
   width: 100%;
   /* height: 100vh; */
@@ -448,8 +446,40 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
   filter: drop-shadow(0px 15px 15px #222);
 }
 
+.narrator-card {
+  background: url(/image/signed-card.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 1000px;
+  min-height: 600px;
+  -webkit-filter: drop-shadow(0px 15px 15px #222);
+  filter: drop-shadow(0px 15px 15px #222);
+}
+
+.btn-continue {
+  color: black;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.btn-continue:hover {
+  cursor: pointer;
+}
+
+.btn-x {
+  padding-left: 8%;
+  display: flex;
+  flex-direction: row;
+}
+
 .question-intro {
   padding: 40px 70px;
+}
+
+.logo-bottom {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
 }
 
 .logo-intro {
@@ -488,8 +518,6 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
 .question-container {
   width: 90%;
   margin: 0 auto;
-  margin-top: -30px;
-  margin-bottom: 40px;
 }
 
 .question-answer-left {
@@ -574,7 +602,6 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
   }
 }
 
-
 /*-------------------------------------- Signed Screen ---------------------------------*/
 
 .signed-page {
@@ -653,8 +680,11 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
 
 @media (max-width: 1200px) {
   .question-card {
-    width: 800px;
-    min-height: 700px;
+    min-height: 600px;
+  }
+
+  .narrator-card {
+    min-height: 600px;
   }
 
   .signed-card {
@@ -673,8 +703,17 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
 
 @media (max-width: 900px) {
   .question-card {
-    min-height: 595px;
+    min-height: 700px;
     width: 650px;
+  }
+
+  .narrator-card {
+    min-height: 700px;
+    width: 650px;
+  }
+
+  .question-intro {
+    padding-bottom: 50px;
   }
 
   .signed-card {
@@ -687,27 +726,42 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
   }
 
   .question-container {
-    margin-top: 0px;
     /* margin-bottom: 30px; */
   }
 
   .question-container2 {
-    margin-top: -30px;
+    margin-left: 40px;
     padding-bottom: 30px;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .question-answer-content {
+    font-size: 16px !important;
   }
 }
 
 @media (max-width: 700px) {
   .question-container {
     width: 100%;
+  }
 
+  .question-intro {
+    padding-bottom: 130px;
   }
 
   .question-card {
     width: 500px;
     height: 850px;
-    margin-bottom: 80px
+    margin-bottom: 80px;
   }
+
+  .narrator-card {
+    width: 500px;
+    height: 850px;
+    margin-bottom: 80px;
+  }
+
   .signed-card {
     width: 500px;
   }
@@ -727,8 +781,11 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
   .signed-card {
     min-height: 675px;
   }
-}
 
+  .question-container2 {
+    margin-left: 0px;
+  }
+}
 
 /*--------------- Header container -----------*/
 /* -------------------------------------------*/
@@ -798,7 +855,6 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
   font-size: 30px;
   display: none;
 }
-
 
 /* Links inside the navbar */
 .navbar a {
@@ -1102,7 +1158,10 @@ span.MuiCircularProgress-root.MuiCircularProgress-indeterminate.MuiCircularProgr
 }
 
 @media (max-width: 600px) {
-  .currency-1, .currency-2, .currency-3, .welcome {
+  .currency-1,
+  .currency-2,
+  .currency-3,
+  .welcome {
     margin: 35px 5px;
   }
 }
@@ -1503,7 +1562,7 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
 }
 
 .pTop {
-  padding-top: 30px;  
+  padding-top: 30px;
 }
 
 .item-2 {
@@ -1656,10 +1715,8 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
   color: #ceb162;
 }
 
-
 /*------------------ Roadmap Page ----------------*/
 /*------------------------------------------------*/
-
 
 .roadmap-status-1 {
   width: 82%;
@@ -1670,7 +1727,7 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
 .roadmap-status-2 {
   width: 55%;
   position: absolute;
-  left: 0
+  left: 0;
 }
 
 .roadmap-status-mobile {
@@ -1709,8 +1766,6 @@ img.roadmap-image {
   margin-top: 25px;
 }
 
-
-
 .roadmap-info {
   margin: 0px 20px;
   width: 200px;
@@ -1746,7 +1801,6 @@ ul.roadmap-list li {
 }
 
 /* Leaderboard Page */
-
 
 .leaderboard td,
 .leaderboard th {
@@ -1995,10 +2049,8 @@ ul.roadmap-list li {
   vertical-align: text-top;
 }
 
-
 /*----------------------- team page -----------------*/
 /*---------------------------------------------------*/
-
 
 .team-container {
   display: flex;
@@ -2170,12 +2222,40 @@ ul.roadmap-list li {
   position: relative;
 }
 
+.home2-divider {
+  text-align: center;
+  margin-top: -12px;
+}
+
+.home2-div2 {
+  padding-top: 10%;
+  padding-right: 20%;
+  padding-bottom: 20%;
+}
+
+.home2-div3 {
+  padding-top: 20%;
+  padding-left: 40%;
+}
+
+.home2-mb7 {
+  margin-bottom: 7px;
+}
+
 .man-sword {
   position: absolute;
   max-height: 100%;
   max-width: 50%;
   left: 0;
   bottom: 0px;
+}
+
+.home3-mb {
+  margin-top: 5%;
+}
+
+.home3-mt-18 {
+  margin-top: 18px;
 }
 
 .textleft {
@@ -2198,6 +2278,11 @@ ul.roadmap-list li {
   bottom: 0px;
 }
 
+.home2-mbt {
+  margin-bottom: 7px;
+  margin-top: 40px;
+}
+
 .button-mint {
   background: #4d8fae;
   width: 170px;
@@ -2215,18 +2300,93 @@ ul.roadmap-list li {
   right: 0;
   bottom: 0px;
 }
+.content-all div {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.home2-plr {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.home2-foot {
+  text-align: center;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+.home3-pt10 {
+  padding-top: 10%;
+}
+
+.home3-center {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.home3-bg-div {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: url(/image/home/bg2.png);
+  z-index: 5;
+}
 
 .home4-stones {
   position: absolute;
   max-height: 100%;
   max-width: 40%;
   left: 0;
-  bottom:-30%;
+  bottom: -15%;
   z-index: 6;
 }
 
-.black {
+.home4-div {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: url(/image/home/bg6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home4-bg4 {
+  background: url(/image/home/bg4.png);
+  position: relative;
+  margin-top: 0px;
+  padding-left: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.home4-bg5 {
+  position:relative;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+  background: url(/image/home/bg5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 5;
+}
+
+.home4-black {
   color: black;
+}
+
+.home4-pad-10 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.home4-pad-20 {
+  padding-left: 10%;
+  padding-right: 20%;
+}
+
+.home4-left {
+  text-align: left;
 }
 
 .worrier {
@@ -2234,4 +2394,30 @@ ul.roadmap-list li {
   width: 40%;
   left: 0;
   bottom: 20%;
+}
+
+
+.home4-width-8 {
+  width: 80%;
+}
+
+
+.home4-width-6 {
+  width: 60%;
+}
+
+.center {
+  text-align: center;
+}
+
+.mg-auto {
+  margin: auto;
+}
+
+.home4-mint-btn {
+  margin-top: 20px;
+  margin-bottom: 20%;
+}
+.home4-mt-20 {
+  margin-top: 20%;
 }

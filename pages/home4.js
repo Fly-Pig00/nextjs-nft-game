@@ -38,13 +38,10 @@ export default function Home() {
           </Grid>
           <img src="/image/home/chair.png" className="chair" />
         </div>
-        <div style={{ textAlign: "center", marginTop: "-12px" }}>
-          <img src="/image/home/divider.png" style={{ width: "80%" }} />
+        <div className="home2-divider">
+          <img src="/image/home/divider.png" width="80%" />
         </div>
-        <div style={{ paddingBottom: "10%",background: "url(/image/home/bg6.png)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center", }}>
+        <div className="home4-div">
           <h1>The bastion</h1>
           <h3>
             An Adventurer who&apos;s lost all memories stands at the center of a
@@ -75,15 +72,11 @@ export default function Home() {
                 justifyContent="center"
                 alignItems="center"
               >
-                <div className="item" style={{ marginTop: "20%" }}>
+                <div className="item home4-mt-20">
                   <img src="/image/home/reward.png" className="content-image" />
                 </div>
                 <h2 className="pTop">REWARDS</h2>
-                <img
-                  src="/image/div.svg"
-                  className="divider"
-                  style={{ margin: "auto" }}
-                />
+                <img src="/image/div.svg" className="divider mg-auto" />
                 <h3>
                   Wander the plains on horseback or sail the oceans <br />
                   on a ship.Explore the wide world <br />
@@ -99,15 +92,11 @@ export default function Home() {
                 justifyContent="center"
                 alignItems="center"
               >
-                <div className="item" style={{ marginTop: "20%" }}>
+                <div className="item home4-mt-20">
                   <img src="/image/home/item.png" className="content-image" />
                 </div>
                 <h2 className="pTop">ITEMS</h2>
-                <img
-                  src="/image/div.svg"
-                  className="divider"
-                  style={{ margin: "auto" }}
-                />
+                <img src="/image/div.svg" className="divider mg-auto" />
                 <h3>
                   Wander the plains on horseback or sail the oceans <br />
                   on a ship.Explore the wide world and <br />
@@ -123,15 +112,11 @@ export default function Home() {
                 justifyContent="center"
                 alignItems="center"
               >
-                <div className="item" style={{ marginTop: "20%" }}>
+                <div className="item home4-mt-20">
                   <img src="/image/home/money.png" className="content-image" />
                 </div>
                 <h2 className="pTop">WALLET</h2>
-                <img
-                  src="/image/div.svg"
-                  className="divider"
-                  style={{ margin: "auto" }}
-                />
+                <img src="/image/div.svg" className="divider mg-auto" />
                 <h3>
                   Wander the plains on horseback or sail the oceans <br />
                   on a ship.Explore the wide world and <br />
@@ -147,18 +132,14 @@ export default function Home() {
                 justifyContent="center"
                 alignItems="center"
               >
-                <div className="item" style={{ marginTop: "20%" }}>
+                <div className="item home4-mt-20">
                   <img
                     src="/image/home/currency.png"
                     className="content-image"
                   />
                 </div>
                 <h2 className="pTop">CURRENCY</h2>
-                <img
-                  src="/image/div.svg"
-                  className="divider"
-                  style={{ margin: "auto" }}
-                />
+                <img src="/image/div.svg" className="divider mg-auto" />
                 <h3>
                   Wander the plains on horseback or sail the oceans <br />
                   on a ship.Explore the wide world and <br />
@@ -168,42 +149,23 @@ export default function Home() {
             </Grid>
           </Grid>
         </div>
-        <div style={{ textAlign: "center", marginTop: "-12px" }}>
-          <img src="/image/home/divider.png" style={{ width: "80%" }} />
+        <div className="home2-divider">
+          <img src="/image/home/divider.png" width="80%" />
         </div>
-        <div
-          style={{
-            background: "url(/image/home/bg4.png)",
-            position: "relative",
-            marginTop: "0px",
-            paddingLeft: "10%",
-            paddingTop: "5%",
-            paddingBottom: "5%",
-          }}
-        >
-          <h1 style={{ textAlign: "left" }}>embark on your adventure</h1>
-          <h3 style={{ textAlign: "left" }}>
-            From the scorching heat of a desert metropolis
-            <br />
-            to the serene peace of hidden forest enclaves,
-            <br />a thrilling story follows wherever your footsteps take you.
-          </h3>
+        <div className="home4-bg4">
+          <div className="home4-width-6">
+            <h1 className="home4-left">embark on your adventure</h1>
+            <h3 className="home4-left">
+              From the scorching heat of a desert metropolis
+              <br />
+              to the serene peace of hidden forest enclaves,
+              <br />a thrilling story follows wherever your footsteps take you.
+            </h3>
+          </div>
           <img src="/image/home/vanguard.png" className="home4-vanguard" />
           <img src="/image/home/stones.png" className="home4-stones" />
         </div>
-        <div
-          className="home2-div1"
-          style={{
-            position:"relative",
-            paddingTop: "10%",
-            paddingBottom: "10%",
-            background: "url(/image/home/bg5.png)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            zIndex: "5",
-          }}
-        >
+        <div className="home2-div1 home4-bg5">
           <Grid
             container
             direction="row"
@@ -215,13 +177,11 @@ export default function Home() {
               <Grid className="content-all" xs={12}>
                 <div
                   className="header content-header"
-                  style={{ textAlign: "center", paddingBottom: "5%" }}
                 >
-                  <h1 className="black">learn about our pfps</h1>
+                  <h1 className="home4-black">learn about our pfps</h1>
                   <img src="/image/div.svg" className="divider" />
                   <h3
-                    className="black"
-                    style={{ paddingLeft: "10%", paddingRight: "10%" }}
+                    className="home4-black home4-pad-10"
                   >
                     It’s all about people. Community is at the core of our
                     culture, we thrive to empower them in everything we do. They
@@ -252,10 +212,9 @@ export default function Home() {
                     height="160px"
                   />
                 </div>
-                <h2 className="black">Paragon</h2>
+                <h2 className="home4-black">Paragon</h2>
                 <p
-                  className="black"
-                  style={{ paddingLeft: "20%", paddingRight: "20%" }}
+                  className="home4-black home4-padd-20"
                 >
                   It’s all about people. Community is at the core of our culture
                 </p>
@@ -268,10 +227,9 @@ export default function Home() {
                     height="160px"
                   />
                 </div>
-                <h2 className="black">Vanguards</h2>
+                <h2 className="home4-black">Vanguards</h2>
                 <p
-                  className="black"
-                  style={{ paddingLeft: "20%", paddingRight: "20%" }}
+                  className="home4-black home4-padd-20"
                 >
                   It’s all about people. Community is at the core of our culture
                 </p>
@@ -284,22 +242,20 @@ export default function Home() {
                     height="160px"
                   />
                 </div>
-                <h2 className="black">Echoes</h2>
+                <h2 className="home4-black">Echoes</h2>
                 <p
-                  className="black"
-                  style={{ paddingLeft: "20%", paddingRight: "20%" }}
+                  className="home4-black home4-padd-20"
                 >
                   It’s all about people. Community is at the core of our culture
                 </p>
               </Grid>
             </Grid>
           </Grid>
-          <h1 className="black" style={{ marginTop: "20%" }}>
+          <h1 className="home4-black home4-mt-20">
             A vast open world
           </h1>
           <div
-            className="button-mint"
-            style={{ marginTop: "20px", marginBottom: "20%" }}
+            className="button-mint home4-mint-btn"
           >
             <span>MINT NOW</span>
           </div>
