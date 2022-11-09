@@ -149,7 +149,9 @@ export default function Home() {
         <div style={{ textAlign: "center", marginTop: "-12px" }}>
           <img src="/image/home/divider.png" style={{ width: "80%" }} />
         </div>
-        <div className="home2-div1" style={{ paddingTop: "10%", paddingBottom:"10%", background:"url(/image/home/bg2.png)", zIndex:"5" }}>
+        <div className="home2-div1" style={{ paddingTop: "10%", background:"url(/image/home/bg2.png)",backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center", zIndex:"5" }}>
           <Grid
             container
             direction="row"
@@ -232,9 +234,7 @@ export default function Home() {
               </Grid>
             </Grid>
           </Grid>
-        </div>
-        <div style={{textAligh:"center", paddingBottom:"10%"}}>
-          <h1>Journey through the universe on the Bastion</h1>
+          <h1 style={{textAligh:"center", paddingBottom:"10%", paddingTop:"10%"}}>Journey through the universe on the Bastion</h1>
         </div>
       </div>
     </AnimatedPage>
