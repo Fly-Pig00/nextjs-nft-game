@@ -75,6 +75,7 @@ export default function Home() {
           <div className="header faction-header">
             <h1>Pick your faction</h1>
             <img src="/image/div.svg" className="divider" />
+            <h4 className="faction-intro">Welcome, vestige, to the Bastion: the eternal crucible of the fallen. Here are gathered the remnants of a thousand worlds, where a relative peace is kept by the three great factions formed centuries ago.</h4>
             <h3>Select your side</h3>
           </div>
           <Grid container spacing={2} style={{margin: '0px'}}>
@@ -89,11 +90,10 @@ export default function Home() {
                   </Link>
                   <h2>Paragons</h2>
                   <p className={paragon}>
-                    Few leave the corporate world with their lives - fewer still
-                    with their souls intact. You&apos;ve been there -
-                    you&apos;ve bent the rules, exploited secrets and weaponized
-                    information. There&apos;s no such thing as a fair game, only
-                    winners and losers.
+                    The oldest and noblest faction in the Bastion. They hold positions 
+                    of high power in politics and military command, and tend to carry 
+                    themselves accordingly. To common eyes, they are seen as the righteous 
+                    elite, but there is a darkness beneath all of that polish.
                   </p>
                 </div>
               </div>
@@ -110,11 +110,10 @@ export default function Home() {
                   </Link>
                   <h2>Vanguards</h2>
                   <p className={vanguard}>
-                    Few leave the corporate world with their lives - fewer still
-                    with their souls intact. You&apos;ve been there -
-                    you&apos;ve bent the rules, exploited secrets and weaponized
-                    information. There&apos;s no such thing as a fair game, only
-                    winners and losers.
+                    Those who had to pave their own way to becoming nobles, not through some nonsense 
+                    birthright. To the outsider, their ways are seen as the way of thieves, cutthroats, 
+                    and blackmailers, but on the inside... it's pretty much the same. Their ways are 
+                    essential to maintaining balance.
                   </p>
                 </div>
               </div>
@@ -131,11 +130,10 @@ export default function Home() {
                   </Link>
                   <h2>Echoes</h2>
                   <p className={echoes}>
-                    Few leave the corporate world with their lives - fewer still
-                    with their souls intact. You&apos;ve been there -
-                    you&apos;ve bent the rules, exploited secrets and weaponized
-                    information. There&apos;s no such thing as a fair game, only
-                    winners and losers.
+                    Refugees from fallen worlds who proved remarkably valuable to the Bastion. 
+                    Equipped with diverse culture and advanced technology, the Echoes have managed 
+                    to equate themselves to the noble houses of Paragons and Vanguard, all while 
+                    retaining their own individuality and identity.
                   </p>
                 </div>
               </div>

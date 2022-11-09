@@ -12,6 +12,17 @@ import { Howl } from "howler";
 
 import React, { useState, useEffect } from "react";
 
+const questions = [
+  [
+    'Narrator: In front of you stands a regal man with shoulder length auburn hair and black eyes. Count Wenham was your instructor at the academy before your graduation, and now he stands before you to determine your future in the Bastion.',
+    `"You think you have what it takes to make it out there, young one? A Paragon's life is full of making difficult choices. Make these next choices wisely. Tell me, who would you sacrifice yourself for if you could only save one?"`,
+    'Your Closest Friend Or Comrade.',
+    'A member of your immediate family.',
+    'A council member of the Prime Nine.',
+    'None of them. I am the most important.'
+  ]
+];
+
 export default function Home() {
   const transition = new Howl({
     src: "./sound/transition.mp3",
@@ -51,53 +62,88 @@ export default function Home() {
                   </div>
                   <img src="/image/div2.svg" className="question-divider" />
                   <h1>Find my faction</h1>
-                  <p>A Paragon is a symbol of peace</p>
+                  <p>
+                    Narrator: In front of you stands a regal man with shoulder length auburn hair
+                    and black eyes. Count Wenham was your instructor at the academy before your
+                    graduation, and now he stands before you to determine your future in the Bastion.
+                  </p>
+                  <p>"You think you have what it takes to make it out there, young one? A Paragon's
+                    life is full of making difficult choices. Make these next choices wisely.
+                    Tell me, who would you sacrifice yourself for if you could only save one?"
+                  </p>
                 </div>
 
                 <div className="logo-intro">
                   <img src="/image/logo-brown.svg" width="200px" />
                 </div>
 
-                <Stack
+                <Grid
+                  container
                   direction="row"
                   justifyContent="center"
                   alignItems="center"
                   spacing={2}
                   className="question-container"
                 >
-                  <Grid xs={4} className="question-answer-left">
-                    <Link href="/signed">
-                      <img src="/image/a.svg" />
-                    </Link>
-                    <span>Yes!</span>
+                  <Grid xs={5} className="question-answer-left">
+                    <div className="question-answer-img">
+                      <Link href="/signed">
+                        <img src="/image/a.svg" />
+                      </Link>
+                    </div>
+                    <div className="question-answer-content">
+                      Your closest friend or comrade.
+                    </div>
                   </Grid>
 
-                  <Grid xs={4} className="question-number">
+                  <Grid xs={2} className="question-number">
                     <img src="/image/2.svg" />
                   </Grid>
 
-                  <Grid xs={4} className="question-answer-right">
-                    <img src="/image/b.svg" /> <span>Who cares!</span>
+                  <Grid xs={5} className="question-answer-right">
+                    <div className="question-answer-content">
+                      Your closest friend or comrade.
+                    </div>
+                    <div className="question-answer-img">
+                      <Link href="/signed">
+                        <img src="/image/B.svg" />
+                      </Link>
+                    </div>
                   </Grid>
-                </Stack>
+                </Grid>
 
-                <Stack
+                <Grid
+                  container
                   direction="row"
                   justifyContent="center"
                   alignItems="center"
                   spacing={2}
-                  className="question-container"
+                  className="question-container question-container2"
                 >
-                  <Grid xs={4} className="question-answer-left">
-                    <img src="/image/c.svg" /> <span>No!</span>
+                  <Grid xs={5} className="question-answer-left">
+                    <div className="question-answer-img">
+                      <Link href="/signed">
+                        <img src="/image/c.svg" />
+                      </Link>
+                    </div>
+                    <div className="question-answer-content">
+                      A council member of the Prime Nine.
+                    </div>
                   </Grid>
 
-                  <Grid xs={4} className="question-number"></Grid>
+                  <Grid xs={2} className="question-number"></Grid>
 
-                  <Grid xs={4} className="question-answer-right">
-                    <img src="/image/d.svg" /> <span>Yesn’t!</span>
+                  <Grid xs={5} className="question-answer-right">
+                    <div className="question-answer-content">
+                      None of them. I am the most important.
+                    </div>
+                    <div className="question-answer-img">
+                      <Link href="/signed">
+                        <img src="/image/d.svg" />
+                      </Link>
+                    </div>
                   </Grid>
-                </Stack>
+                </Grid>
               </div>
             </Grid>
           </Grid>
