@@ -131,7 +131,7 @@ export default function Home() {
                 >
                   <h1>create and sell nfts</h1>
                   <img src="/image/div.svg" className="divider" />
-                  <h3 className="home2plr">
+                  <h3 className="home2-plr">
                     It’s all about people. Community is at the core of our
                     culture, we thrive to empower them in everything we do. They
                     will always be the #1 priority for us.av
