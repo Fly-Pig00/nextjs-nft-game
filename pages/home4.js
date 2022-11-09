@@ -191,9 +191,11 @@ export default function Home() {
         <div
           className="home2-div1"
           style={{
+            position:"relative",
             paddingTop: "10%",
             paddingBottom: "10%",
-            background: "url(/image/home/bg5.png)",backgroundRepeat: "no-repeat",   
+            background: "url(/image/home/bg5.png)",
+            backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
             zIndex: "5",
@@ -289,10 +291,16 @@ export default function Home() {
               </Grid>
             </Grid>
           </Grid>
-          <h1 className="black" style={{marginTop:"20%"}}>
+          <h1 className="black" style={{ marginTop: "20%" }}>
             A vast open world
           </h1>
-          <div className="button-mint" style={{marginTop:"20px", marginBottom:"20%"}}><span>MINT NOW</span></div>
+          <div
+            className="button-mint"
+            style={{ marginTop: "20px", marginBottom: "20%" }}
+          >
+            <span>MINT NOW</span>
+          </div>
+          <img src="/image/home/worrier.png" className="worrier" />
         </div>
       </div>
     </AnimatedPage>
