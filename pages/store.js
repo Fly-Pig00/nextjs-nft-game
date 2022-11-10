@@ -37,6 +37,11 @@ const data = [
       url: "image/items/59.png",
       description: "Earn them by creating topics in the community forums.",
     },
+    {
+      name: "charm",
+      url: "image/items/81.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
   ],
   [
     {
@@ -106,6 +111,11 @@ const data = [
     {
       name: "sword",
       url: "image/items/28.png",
+      description: "Earn them by creating topics in the community forums.",
+    },
+    {
+      name: "charm",
+      url: "image/items/81.png",
       description: "Earn them by creating topics in the community forums.",
     },
   ],

@@ -1573,6 +1573,26 @@ li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiM
   align-items: center;
 }
 
+.home3-card {
+  background: url(/image/home/card-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: rgb(219, 219, 181);
+  border-width: 20px;
+  width: 100%;
+  height:250px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 10%;
+}
+.home3-card h2, .home3-card h3 {
+  text-align: left;
+}
 .content-info {
   width: 280px;
 }

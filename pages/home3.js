@@ -79,7 +79,7 @@ export default function Home() {
                   <img src="/image/div.svg" className="divider" />
                   <h3 className="home2-plr home3-mb">
                     Wander the plains on horseback or sail the oceans on a
-                    ship.Explore the wide world  and create your own story.
+                    ship.Explore the wide world and create your own story.
                   </h3>
                 </div>
               </Grid>
@@ -100,8 +100,8 @@ export default function Home() {
                   <img src="/image/div.svg" className="divider" />
                   <h3 className="home2-plr home3-mb">
                     Fight back the forces that threaten the world or test your
-                    might againstother Adventurers.  Lead your guild to <br/>victory
-                    in battle to earn g reat renown and greater wealth.
+                    might againstother Adventurers. Lead your guild to <br />
+                    victory in battle to earn g reat renown and greater wealth.
                   </h3>
                 </div>
               </Grid>
@@ -148,19 +148,34 @@ export default function Home() {
             className="showcase-items2"
           >
             <Grid container spacing={2}>
-              <Grid md={4} xs={12}>
-                <div className="item-2">
-                  <img src="/image/home/wallet.png" width="250px" />
+              <Grid lg={4} xs={12}>
+                <div className="home3-card">
+                  <img src="/image/home/wallet-logo.png" width="50px" />
+                  <h2>Wallet</h2>
+                  <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                  </h3>
                 </div>
               </Grid>
-              <Grid md={4} xs={12}>
-                <div className="item-2">
-                  <img src="/image/home/gamification.png" width="250px" />
+              <Grid lg={4} xs={12}>
+              <div className="home3-card">
+                  <img src="/image/home/gamefication-logo.png" width="50px" />
+                  <h2>Gamification</h2>
+                  <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                  </h3>
                 </div>
               </Grid>
-              <Grid md={4} xs={12}>
-                <div className="item-2">
-                  <img src="/image/home/connect.png" width="250px" />
+              <Grid lg={4} xs={12}>
+              <div className="home3-card">
+                  <img src="/image/home/connect-logo.png" width="50px" />
+                  <h2>Connect</h2>
+                  <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                  </h3>
                 </div>
               </Grid>
             </Grid>
