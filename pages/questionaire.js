@@ -25,11 +25,11 @@ export default function Home() {
   const [index, setIndex] = useState(0);
   const router = useRouter();
   const { id } = router.query;
-
+  console.log(id);
   const transition = new Howl({
     src: "./sound/transition.mp3",
   });
-  const data = questionData[id];
+  const data = questionData[id-1];
   console.log(data);
 
   useEffect(() => {
